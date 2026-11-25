@@ -1,6 +1,6 @@
 # Pixel Topup — Complete Project Setup Guide (সম্পূর্ণ প্রজেক্ট সেটআপ গাইড)
 
-> **DEVELOP BY https://t.me/Infinity_Codex**
+> **DEVELOP BY https://t.me/TraderFaisalAhmed**
 
 এই প্রজেক্টটি **Pixel Topup** ওয়েবসাইটের সম্পূর্ণ ইউজার প্যানেল (`user.html`), এডমিন প্যানেল (`admin.html`), ডাটাবেস (`database.json`), এবং ফায়ারবেস সিকিউরিটি রুলস (`rules.json`) নিয়ে গঠিত। নিচে ধাপে ধাপে সম্পূর্ণ সেটআপ করার নিয়ম দেওয়া হলো।
 
@@ -93,4 +93,4 @@ window.PIXEL_FIREBASE_CONFIG = {
 - **cPanel / Shared Hosting:** `user.html` ফাইলটির নাম পরিবর্তন করে `index.html` রাখতে পারেন এবং `admin.html` একই ফোল্ডারে (`public_html`) আপলোড করুন।
 - **Firebase Hosting / Netlify / Vercel / GitHub Pages:** প্রজেক্ট ফোল্ডারটি সরাসরি ডিপ্লয় করুন (`user.html`-কে মেইন পেজ বা `index.html` হিসেবে ব্যবহার করতে পারেন)।
 
-**DEVELOP BY https://t.me/Infinity_Codex**
+**DEVELOP BY https://t.me/TraderFaisalAhmed**
