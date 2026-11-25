@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <!-- ============================================================================ -->
-<!-- DEVELOP BY https://t.me/Infinity_Codex                                       -->
-<!-- Project: Pixel Topup                                                         -->
+<!-- DEVELOP BY https://t.me/TraderFaisalAhmed                                       -->
+<!-- Project: FSL Topup                                                         -->
 <!-- ============================================================================ -->
 <html lang="bn">
-<!-- DEVELOP BY https://t.me/Infinity_Codex -->
+<!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixel Topup</title>
+    <title>FSL Topup</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Bree+Serif&family=Noto+Serif+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <!-- Pixel Topup Favicon & Web App Icon -->
+    <!-- FSL Topup Favicon & Web App Icon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230b103b%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2250%25%22%20stop-color%3D%22%235215b5%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%237c3aed%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22gem%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23a855f7%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2338bdf8%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%3Cfilter%20id%3D%22glow%22%20x%3D%22-20%25%22%20y%3D%22-20%25%22%20width%3D%22140%25%22%20height%3D%22140%25%22%3E%0A%20%20%20%20%20%20%3CfeGaussianBlur%20stdDeviation%3D%2210%22%20result%3D%22blur%22/%3E%0A%20%20%20%20%20%20%3CfeComposite%20in%3D%22SourceGraphic%22%20in2%3D%22blur%22%20operator%3D%22over%22/%3E%0A%20%20%20%20%3C/filter%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%22512%22%20height%3D%22512%22%20rx%3D%22128%22%20fill%3D%22url%28%23bg%29%22/%3E%0A%20%20%3Crect%20x%3D%2220%22%20y%3D%2220%22%20width%3D%22472%22%20height%3D%22472%22%20rx%3D%22112%22%20fill%3D%22none%22%20stroke%3D%22rgba%28255%2C255%2C255%2C0.22%29%22%20stroke-width%3D%228%22/%3E%0A%20%20%3Cg%20transform%3D%22translate%28106%2C%2096%29%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M150%2016%20L270%2085%20L150%20154%20L30%2085%20Z%22%20fill%3D%22%23c084fc%22%20filter%3D%22url%28%23glow%29%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M150%2036%20L248%2092%20L150%20144%20L52%2092%20Z%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.32%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M30%20145%20L150%20214%20L270%20145%22%20fill%3D%22none%22%20stroke%3D%22%23e9d5ff%22%20stroke-width%3D%2226%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M30%20205%20L150%20274%20L270%20205%22%20fill%3D%22none%22%20stroke%3D%22%2338bdf8%22%20stroke-width%3D%2226%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M140%2068%20L178%20114%20L144%20124%20L168%20178%20L122%20126%20L150%20116%20Z%22%20fill%3D%22%23ffffff%22%20filter%3D%22url%28%23glow%29%22/%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E">
     <link rel="icon" type="image/png" sizes="192x192" href="https://host.tscv.workers.dev/img/03506b2a447b460d">
     <link rel="apple-touch-icon" href="https://host.tscv.workers.dev/img/03506b2a447b460d">
@@ -25,23 +25,23 @@
     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
-    <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+    <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
     <script>
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
         // Firebase Web config (requires ONLY: 1. Google & Email/Password Auth, 2. Realtime Database).
-        // DEVELOP BY https://t.me/Infinity_Codex
-        window.PIXEL_FIREBASE_CONFIG = {
-            apiKey: "AIzaSyD-16NmuSFlmb3-uiW17pL8VVxwnQnF3g8",
-            authDomain: "pixeltopup-f6fc1.firebaseapp.com",
-            databaseURL: "https://pixeltopup-f6fc1-default-rtdb.firebaseio.com",
-            projectId: "pixeltopup-f6fc1",
-            storageBucket: "pixeltopup-f6fc1.firebasestorage.app",
-            messagingSenderId: "590882144270",
-            appId: "1:590882144270:web:5b9ce3fd2d231d955a7c5f",
-            measurementId: "G-RPLL1CXECB"
+        // DEVELOP BY https://t.me/TraderFaisalAhmed
+        window.FSL_FIREBASE_CONFIG = {
+            apiKey: "AIzaSyCVJ9u2dfxvlYmMe9yH_5H3xV0wTHXC1MI",
+            authDomain: "fsltopup.firebaseapp.com",
+            databaseURL: "https://fsltopup-default-rtdb.firebaseio.com",
+            projectId: "fsltopup",
+            storageBucket: "fsltopup.firebasestorage.app",
+            messagingSenderId: "293218956697",
+            appId: "1:293218956697:web:f8611d84ae821b264dcf08",
+            measurementId: "G-H3MTBJSM8S"
         };
 
-        window.pixelFirebaseConfigReady = function (config) {
+        window.FSLFirebaseConfigReady = function (config) {
             const required = ["apiKey", "authDomain", "projectId"];
             return !!config && required.every((key) => {
                 const value = config[key];
@@ -49,7 +49,7 @@
             });
         };
 
-        window.showPixelFirebaseSetupNotice = function () {
+        window.showFSLFirebaseSetupNotice = function () {
             if (!document.body || document.getElementById("firebase-setup-notice")) return;
             const notice = document.createElement("div");
             notice.id = "firebase-setup-notice";
@@ -65,13 +65,13 @@
             notice.appendChild(message);
             document.body.prepend(notice);
         };
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     </script>
 
-    <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+    <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
     <style>
-        /* DEVELOP BY https://t.me/Infinity_Codex */
-        /* DEVELOP BY https://t.me/Infinity_Codex */
+        /* DEVELOP BY https://t.me/TraderFaisalAhmed */
+        /* DEVELOP BY https://t.me/TraderFaisalAhmed */
         body { 
             font-family: 'Poppins', sans-serif; 
             background-color: #f4f3f9; 
@@ -306,8 +306,8 @@
         ::-webkit-scrollbar-track { background: #eef0f6; }
         ::-webkit-scrollbar-thumb { background: #7c3aed; border-radius: 9999px; }
 
-        /* DEVELOP BY https://t.me/Infinity_Codex */
-        .pixel-input {
+        /* DEVELOP BY https://t.me/TraderFaisalAhmed */
+        .FSL-input {
             background-color: #f8fafc;
             border: 1.5px solid #e2e8f0;
             color: #0f172a;
@@ -318,14 +318,14 @@
             border-radius: 12px;
             font-size: 0.875rem;
         }
-        .pixel-input:focus {
+        .FSL-input:focus {
             background-color: #ffffff;
             border-color: #6d28d9;
             box-shadow: 0 0 0 3px rgba(109, 40, 217, 0.12);
         }
 
-        /* DEVELOP BY https://t.me/Infinity_Codex */
-        .pixel-btn {
+        /* DEVELOP BY https://t.me/TraderFaisalAhmed */
+        .FSL-btn {
             background: linear-gradient(135deg, #5215b5 0%, #7c3aed 100%);
             color: #ffffff;
             padding: 11px 20px;
@@ -341,13 +341,13 @@
             justify-content: center;
             gap: 8px;
         }
-        .pixel-btn:hover {
+        .FSL-btn:hover {
             transform: translateY(-1px);
             box-shadow: 0 6px 16px rgba(82, 21, 181, 0.32);
         }
-        .pixel-btn:active { transform: scale(0.98); }
+        .FSL-btn:active { transform: scale(0.98); }
 
-        .pixel-btn-edit {
+        .FSL-btn-edit {
             background-color: #f3e8ff;
             color: #6d28d9;
             border: 1px solid #d8b4fe;
@@ -360,13 +360,13 @@
             align-items: center;
             gap: 5px;
         }
-        .pixel-btn-edit:hover {
+        .FSL-btn-edit:hover {
             background-color: #6d28d9;
             color: #ffffff;
             border-color: #6d28d9;
         }
 
-        .pixel-btn-danger {
+        .FSL-btn-danger {
             background-color: #fef2f2;
             color: #dc2626;
             border: 1px solid #fecaca;
@@ -379,13 +379,13 @@
             align-items: center;
             gap: 5px;
         }
-        .pixel-btn-danger:hover {
+        .FSL-btn-danger:hover {
             background-color: #dc2626;
             color: #ffffff;
             border-color: #dc2626;
         }
 
-        .pixel-btn-outline {
+        .FSL-btn-outline {
             background-color: #ffffff;
             border: 1.5px solid #cbd5e1;
             color: #334155;
@@ -398,14 +398,14 @@
             align-items: center;
             gap: 6px;
         }
-        .pixel-btn-outline:hover {
+        .FSL-btn-outline:hover {
             border-color: #5215b5;
             color: #5215b5;
             background-color: #faf5ff;
         }
 
-        /* DEVELOP BY https://t.me/Infinity_Codex */
-        .pixel-card {
+        /* DEVELOP BY https://t.me/TraderFaisalAhmed */
+        .FSL-card {
             background-color: #ffffff;
             border: 1px solid #e2e8f0;
             border-radius: 18px;
@@ -413,20 +413,20 @@
             box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04);
         }
 
-        .pixel-table-wrap {
+        .FSL-table-wrap {
             background-color: #ffffff;
             border: 1px solid #e2e8f0;
             border-radius: 16px;
             overflow-x: auto;
             box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04);
         }
-        /* DEVELOP BY https://t.me/Infinity_Codex */
-        .pixel-table {
+        /* DEVELOP BY https://t.me/TraderFaisalAhmed */
+        .FSL-table {
             width: 100%;
             border-collapse: collapse;
             min-width: 720px;
         }
-        .pixel-table th {
+        .FSL-table th {
             background-color: #f8fafc;
             color: #475569;
             font-weight: 700;
@@ -437,15 +437,15 @@
             border-bottom: 1px solid #e2e8f0;
             text-align: left;
         }
-        .pixel-table td {
+        .FSL-table td {
             padding: 14px 16px;
             border-bottom: 1px solid #f1f5f9;
             font-size: 0.875rem;
             color: #1e293b;
             vertical-align: middle;
         }
-        .pixel-table tr:last-child td { border-bottom: none; }
-        .pixel-table tr:hover td { background-color: #faf7ff; }
+        .FSL-table tr:last-child td { border-bottom: none; }
+        .FSL-table tr:hover td { background-color: #faf7ff; }
 
         .nav-link {
             border-radius: 12px;
@@ -486,7 +486,7 @@
         @keyframes spin { to { transform: rotate(360deg); } }
     
     
-        /* Pixel Topup Ultra-Premium Centered SweetAlert2 Modal with Full Backdrop Blur */
+        /* FSL Topup Ultra-Premium Centered SweetAlert2 Modal with Full Backdrop Blur */
         .swal2-container.swal2-shown,
         .swal2-container.swal2-backdrop-show {
             position: fixed !important;
@@ -532,10 +532,10 @@
             padding: 26px 22px 24px !important;
             font-family: 'Poppins', 'Noto Serif Bengali', sans-serif !important;
             color: #0f172a !important;
-            animation: pixelModalPop 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+            animation: FSLModalPop 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
         }
-        /* DEVELOP BY https://t.me/Infinity_Codex */
-        @keyframes pixelModalPop {
+        /* DEVELOP BY https://t.me/TraderFaisalAhmed */
+        @keyframes FSLModalPop {
             0% { opacity: 0; transform: scale(0.9) translateY(14px); }
             100% { opacity: 1; transform: scale(1) translateY(0); }
         }
@@ -645,8 +645,8 @@
             height: 0 !important;
             opacity: 0 !important;
         }
-        /* DEVELOP BY https://t.me/Infinity_Codex */
-        .pixel-light-modal-popup {
+        /* DEVELOP BY https://t.me/TraderFaisalAhmed */
+        .FSL-light-modal-popup {
             background: #ffffff !important;
             border-radius: 28px !important;
             border: 1.5px solid rgba(124, 58, 237, 0.25) !important;
@@ -655,14 +655,14 @@
             max-width: 88vw !important;
             width: 340px !important;
         }
-        /* DEVELOP BY https://t.me/Infinity_Codex */
+        /* DEVELOP BY https://t.me/TraderFaisalAhmed */
     </style>
 </head>
-<!-- DEVELOP BY https://t.me/Infinity_Codex -->
+<!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
 <body class="select-none bg-slate-50">
 
 <div id="app-content" class="relative max-w-md mx-auto bg-slate-50 min-h-screen shadow-2xl">
-    <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+    <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
     <header class="bg-white/70 backdrop-blur-xl supports-[backdrop-filter]:bg-white/60 px-4 py-3.5 sticky top-0 z-40 flex justify-between items-center shadow-[0_8px_24px_rgba(82,21,181,0.10)] border-b border-white/70">
         <div class="flex items-center gap-2">
             <img id="header-logo-img" src="" alt="" class="h-12 max-w-[190px] w-auto object-contain drop-shadow-sm hidden"><span id="header-site-title" class="font-bold text-base text-[#5215b5]"></span>
@@ -692,10 +692,10 @@
         </div>
     </div>
 
-    <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+    <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
     <main class="p-3 relative pb-20">
         
-        <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+        <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
         <section id="auth-sec" class="hidden animate-fade-in pb-12">
             <div class="bg-white rounded-2xl shadow-xl border border-purple-100 overflow-hidden relative">
                 
@@ -710,7 +710,7 @@
                     <div class="w-12 h-12 rounded-2xl bg-white/15 backdrop-blur-md border border-white/25 flex items-center justify-center mb-3 shadow-inner">
                         <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
                     </div>
-                    <h2 class="text-xl font-bold tracking-tight">Welcome to Pixel Topup</h2>
+                    <h2 class="text-xl font-bold tracking-tight">Welcome to FSL Topup</h2>
                     <p class="text-xs text-purple-200 mt-0.5">Instant game top-up & secure digital wallet</p>
 
                     <div class="grid grid-cols-2 gap-1.5 bg-black/25 p-1 rounded-xl mt-5 border border-white/10">
@@ -764,7 +764,7 @@
                         </button>
 
                         <div class="mt-5 text-center text-xs text-gray-600">
-                            New user to Pixel Topup? <button onclick="toggleAuth('register')" class="text-[#5215b5] font-bold hover:underline ml-1">Create Account</button>
+                            New user to FSL Topup? <button onclick="toggleAuth('register')" class="text-[#5215b5] font-bold hover:underline ml-1">Create Account</button>
                         </div>
                     </div>
 
@@ -832,7 +832,7 @@
             </div>
         </section>
 
-        <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+        <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
         <section id="home-sec" class="animate-fade-in pb-0">
             <div id="banner-container" class="mb-2 rounded-xl overflow-hidden shadow-sm h-44 bg-gray-200 relative group hidden">
                 <div id="slider-wrapper" class="flex h-full w-full transition-transform duration-500 ease-out"></div>
@@ -909,7 +909,7 @@
             <div class="mt-6 -mx-3 bg-[#0b103b] text-white px-5 pt-7 pb-8 font-en">
                 <div class="hidden">
                     <img id="about-logo-img" src="">
-                    <h2 id="about-site-name">Pixel Topup</h2>
+                    <h2 id="about-site-name">FSL Topup</h2>
                 </div>
 
                 <h3 class="text-xs font-bold uppercase tracking-wider text-white mb-1.5">STAY CONNECTED</h3>
@@ -951,7 +951,7 @@
                         </div>
                         <div>
                             <div class="text-[11px] font-bold text-white">Telegram HelpLine</div>
-                            <div class="text-[11px] text-gray-300">@PixelTopup</div>
+                            <div class="text-[11px] text-gray-300">@FSLTopup</div>
                         </div>
                     </a>
                     <a id="contact-facebook" href="#" class="hidden"></a>
@@ -966,13 +966,13 @@
                         <span>Online Delivery Policy</span>
                     </div>
                     <p class="text-[11px] text-gray-300">
-                        © 2026 Pixel Topup | All Rights Reserved | Developed by <a href="https://t.me/infinity_codex" target="_blank" class="font-bold text-white no-underline hover:underline">Unknown Hex</a>
+                        © 2026 FSL Topup | All Rights Reserved | Developed by <a href="https://t.me/TraderFaisalAhmed" target="_blank" class="font-bold text-white no-underline hover:underline">FaisalAhmed</a>
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+        <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
         <section id="tutorial-sec" class="hidden animate-fade-in pb-24">
             <div class="bg-gradient-to-r from-[#5215b5] via-[#6d28d9] to-[#3b0764] rounded-2xl p-5 text-white shadow-md mb-4 flex items-center justify-between">
                 <div>
@@ -988,7 +988,7 @@
             <div id="tutorial-list-container" class="space-y-4"></div>
         </section>
 
-        <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+        <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
         <section id="history-sec" class="hidden animate-fade-in pb-24">
             <div class="bg-gradient-to-r from-[#5215b5] via-[#6d28d9] to-[#3b0764] rounded-2xl p-5 text-white shadow-md mb-4 flex items-center justify-between">
                 <div>
@@ -1003,7 +1003,7 @@
             <div id="history-list" class="space-y-3"></div>
         </section>
 
-        <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+        <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
         <section id="topup-sec" class="hidden animate-fade-in pb-12">
             <div class="bg-gradient-to-r from-[#5215b5] to-[#3b0764] p-4 rounded-2xl shadow-md flex items-center gap-3.5 mb-4 text-white relative overflow-hidden">
                 <button onclick="showSec('home')" class="text-white/80 hover:text-white w-8 h-8 flex items-center justify-center rounded-full bg-white/15 hover:bg-white/25 transition absolute top-3.5 right-3.5">
@@ -1119,7 +1119,7 @@
             <span id="total-price" class="hidden">0</span>
         </section>
 
-        <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+        <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
         <section id="addmoney-sec" class="hidden animate-fade-in pb-24 min-h-screen">
             
             <div id="am-step-1" class="step-transition">
@@ -1253,7 +1253,7 @@
                                 <img id="pay-site-logo-small" src="" class="w-full h-full rounded-full object-cover">
                             </div>
                             <div>
-                                <p class="text-sm text-gray-800 font-bold">Pixel Topup Auto Pay</p>
+                                <p class="text-sm text-gray-800 font-bold">FSL Topup Auto Pay</p>
                                 <p class="text-[11px] text-emerald-600 font-semibold">Instant Verification</p>
                             </div>
                         </div>
@@ -1324,7 +1324,7 @@
             </div>
         </section>
 
-        <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+        <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
         <section id="account-sec" class="hidden animate-fade-in pb-24 min-h-screen">
             <div class="bg-gradient-to-br from-[#5215b5] via-[#4c1d95] to-[#0b103b] rounded-2xl p-6 text-white shadow-lg mb-5 relative overflow-hidden">
                 <div class="absolute -top-12 -right-12 w-36 h-36 rounded-full bg-white/10 blur-xl pointer-events-none"></div>
@@ -1475,7 +1475,7 @@
         </div>
     </div>
 
-    <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+    <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
     <nav class="fixed bottom-0 w-full bg-white/85 backdrop-blur-xl border-t border-purple-100 py-2.5 px-3 z-40 max-w-md mx-auto left-0 right-0 shadow-[0_-8px_24px_rgba(82,21,181,0.10)]">
         <div class="flex justify-between items-center">
             <button onclick="showSec('home')" class="nav-item flex flex-col items-center gap-1 text-gray-500 transition-all duration-200 hover:text-[#5215b5] active-tab group" id="nav-home">
@@ -1507,7 +1507,7 @@
 </div>
 
 
-<!-- DEVELOP BY https://t.me/Infinity_Codex -->
+<!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
 <div id="admin-workspace-wrapper" class="hidden fixed inset-0 z-50 bg-[#f4f5f9] flex h-screen overflow-hidden">
 <div id="loading-spinner">
         <div class="spinner"></div>
@@ -1523,8 +1523,8 @@
             </div>
             <div id="edit-modal-body" class="p-6 space-y-4 max-h-[75vh] overflow-y-auto"></div>
             <div class="px-6 py-4 bg-slate-50 border-t border-slate-200 flex justify-end gap-3">
-                <button onclick="closeEditModal()" class="pixel-btn-outline">Cancel</button>
-                <button id="edit-modal-save-btn" class="pixel-btn">Save Changes</button>
+                <button onclick="closeEditModal()" class="FSL-btn-outline">Cancel</button>
+                <button id="edit-modal-save-btn" class="FSL-btn">Save Changes</button>
             </div>
         </div>
     </div>
@@ -1534,7 +1534,7 @@
 
     <div id="sidebar-backdrop" class="fixed inset-0 bg-black/60 z-40 hidden lg:hidden" onclick="toggleSidebar()"></div>
 
-    <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+    <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
     <aside class="w-72 bg-[#0b103b] text-white flex-col hidden fixed inset-y-0 left-0 z-50 lg:static lg:flex transition-transform transform -translate-x-full lg:translate-x-0 shadow-2xl" id="sidebar">
         <div class="p-6 border-b border-white/10 flex items-center justify-between">
             <div class="flex items-center gap-3">
@@ -1542,8 +1542,8 @@
                     <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
                 </div>
                 <div>
-                    <h1 class="text-lg font-extrabold tracking-wider text-white leading-none">PIXEL<span class="text-purple-400">ADMIN</span></h1>
-                    <span class="text-[10px] text-slate-400 font-medium">Pixel Topup Control</span>
+                    <h1 class="text-lg font-extrabold tracking-wider text-white leading-none">FSL<span class="text-purple-400">ADMIN</span></h1>
+                    <span class="text-[10px] text-slate-400 font-medium">FSL Topup Control</span>
                 </div>
             </div>
             <button class="lg:hidden text-slate-400 hover:text-white" onclick="toggleSidebar()">
@@ -1551,7 +1551,7 @@
             </button>
         </div>
 
-        <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+        <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
         <nav class="flex-1 overflow-y-auto py-4 space-y-0.5">
             <a href="#" onclick="switchView('dashboard')" id="nav-dashboard" class="nav-link active flex items-center px-4 py-3">
                 <i class="fas fa-chart-pie w-7 text-center"></i> Dashboard
@@ -1592,14 +1592,14 @@
                 <i class="fas fa-sign-out-alt"></i> Logout Admin
             </button>
             <div class="text-center text-[10px] text-slate-400">
-                Developed by <a href="https://t.me/infinity_codex" target="_blank" class="text-purple-300 font-bold hover:underline">Unknown Hex</a>
+                Developed by <a href="https://t.me/TraderFaisalAhmed" target="_blank" class="text-purple-300 font-bold hover:underline">FaisalAhmed</a>
             </div>
         </div>
     </aside>
 
-    <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+    <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
     <main class="flex-1 flex flex-col hidden overflow-hidden" id="main-content">
-        <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+        <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
         <header class="bg-white border-b border-slate-200 px-4 md:px-8 py-4 flex justify-between items-center z-10 shadow-sm">
             <div class="flex items-center gap-3">
                 <button class="lg:hidden w-10 h-10 rounded-xl bg-purple-50 text-[#5215b5] flex items-center justify-center" onclick="toggleSidebar()">
@@ -1607,7 +1607,7 @@
                 </button>
                 <div>
                     <h2 id="page-title" class="text-lg md:text-xl font-extrabold text-slate-800">Dashboard Overview</h2>
-                    <p id="page-desc" class="text-slate-500 text-xs">Real-time control panel for Pixel Topup</p>
+                    <p id="page-desc" class="text-slate-500 text-xs">Real-time control panel for FSL Topup</p>
                 </div>
             </div>
             <div class="flex flex-wrap items-center gap-2">
@@ -1625,10 +1625,10 @@
 
         <div class="flex-1 overflow-y-auto p-4 md:p-8 space-y-6">
 
-            <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+            <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
             <div id="view-dashboard" class="view-section space-y-6">
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
-                    <div class="pixel-card flex items-center justify-between border-l-4 border-l-[#5215b5]">
+                    <div class="FSL-card flex items-center justify-between border-l-4 border-l-[#5215b5]">
                         <div>
                             <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Total Users</p>
                             <h3 class="text-3xl font-extrabold text-slate-800 mt-1" id="dash-users">0</h3>
@@ -1639,7 +1639,7 @@
                         </div>
                     </div>
 
-                    <div class="pixel-card flex items-center justify-between border-l-4 border-l-blue-600">
+                    <div class="FSL-card flex items-center justify-between border-l-4 border-l-blue-600">
                         <div>
                             <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Total Orders</p>
                             <h3 class="text-3xl font-extrabold text-slate-800 mt-1" id="dash-orders">0</h3>
@@ -1650,7 +1650,7 @@
                         </div>
                     </div>
 
-                    <div class="pixel-card flex items-center justify-between border-l-4 border-l-amber-500">
+                    <div class="FSL-card flex items-center justify-between border-l-4 border-l-amber-500">
                         <div>
                             <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Pending Orders</p>
                             <h3 class="text-3xl font-extrabold text-slate-800 mt-1" id="dash-pending-orders">0</h3>
@@ -1661,7 +1661,7 @@
                         </div>
                     </div>
 
-                    <div class="pixel-card flex items-center justify-between border-l-4 border-l-emerald-500">
+                    <div class="FSL-card flex items-center justify-between border-l-4 border-l-emerald-500">
                         <div>
                             <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Pending Deposits</p>
                             <h3 class="text-3xl font-extrabold text-slate-800 mt-1" id="dash-deposits">0</h3>
@@ -1672,7 +1672,7 @@
                         </div>
                     </div>
 
-                    <div class="pixel-card flex items-center justify-between border-l-4 border-l-pink-600">
+                    <div class="FSL-card flex items-center justify-between border-l-4 border-l-pink-600">
                         <div>
                             <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Completed Revenue</p>
                             <h3 class="text-3xl font-extrabold text-slate-800 mt-1" id="dash-revenue">৳0</h3>
@@ -1683,7 +1683,7 @@
                         </div>
                     </div>
 
-                    <div class="pixel-card flex items-center justify-between border-l-4 border-l-indigo-600">
+                    <div class="FSL-card flex items-center justify-between border-l-4 border-l-indigo-600">
                         <div>
                             <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Active Games</p>
                             <h3 class="text-3xl font-extrabold text-slate-800 mt-1" id="dash-games">0</h3>
@@ -1696,7 +1696,7 @@
                 </div>
 
                 <div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
-                    <div class="pixel-card">
+                    <div class="FSL-card">
                         <div class="flex items-center justify-between mb-4">
                             <h3 class="font-bold text-slate-800 text-base flex items-center gap-2">
                                 <span class="w-2 h-5 bg-[#5215b5] rounded-full"></span> Latest Orders
@@ -1719,7 +1719,7 @@
                         </div>
                     </div>
 
-                    <div class="pixel-card">
+                    <div class="FSL-card">
                         <div class="flex items-center justify-between mb-4">
                             <h3 class="font-bold text-slate-800 text-base flex items-center gap-2">
                                 <span class="w-2 h-5 bg-emerald-500 rounded-full"></span> Recent Deposit Requests
@@ -1743,10 +1743,10 @@
                 </div>
             </div>
 
-            <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+            <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
             <div id="view-settings" class="view-section hidden space-y-6">
                 <div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
-                    <div class="pixel-card">
+                    <div class="FSL-card">
                         <div class="flex items-center gap-2.5 mb-5 pb-3 border-b border-slate-100">
                             <div class="w-9 h-9 rounded-xl bg-purple-50 text-[#5215b5] flex items-center justify-center"><i class="fas fa-globe"></i></div>
                             <div>
@@ -1755,16 +1755,16 @@
                             </div>
                         </div>
                         <div class="space-y-4">
-                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Site Name</label><input type="text" id="set-sitename" class="pixel-input"></div>
-                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Logo URL (Direct Image Link)</label><input type="url" id="set-logo" class="pixel-input" placeholder="https://..."></div>
-                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Scrolling Notice Text</label><textarea id="set-notice" class="pixel-input h-24"></textarea></div>
-                            <div><label class="block text-xs font-bold text-slate-600 mb-1">App Download Link</label><input type="text" id="set-applink" class="pixel-input"></div>
-                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Admin Login Email (Opens Admin Panel from User Login)</label><input type="email" id="set-admin-email" class="pixel-input" placeholder="admin@example.com"></div>
+                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Site Name</label><input type="text" id="set-sitename" class="FSL-input"></div>
+                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Logo URL (Direct Image Link)</label><input type="url" id="set-logo" class="FSL-input" placeholder="https://..."></div>
+                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Scrolling Notice Text</label><textarea id="set-notice" class="FSL-input h-24"></textarea></div>
+                            <div><label class="block text-xs font-bold text-slate-600 mb-1">App Download Link</label><input type="text" id="set-applink" class="FSL-input"></div>
+                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Admin Login Email (Opens Admin Panel from User Login)</label><input type="email" id="set-admin-email" class="FSL-input" placeholder="admin@example.com"></div>
                         </div>
-                        <button onclick="saveSettings('general')" class="pixel-btn mt-5 w-full"><i class="fas fa-save"></i> Save General Info</button>
+                        <button onclick="saveSettings('general')" class="FSL-btn mt-5 w-full"><i class="fas fa-save"></i> Save General Info</button>
                     </div>
 
-                    <div class="pixel-card">
+                    <div class="FSL-card">
                         <div class="flex items-center gap-2.5 mb-5 pb-3 border-b border-slate-100">
                             <div class="w-9 h-9 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center"><i class="fas fa-share-alt"></i></div>
                             <div>
@@ -1773,15 +1773,15 @@
                             </div>
                         </div>
                         <div class="space-y-4">
-                            <div><label class="block text-xs font-bold text-slate-600 mb-1">WhatsApp Number (with country code, e.g. 88017...)</label><input type="text" id="set-whatsapp" class="pixel-input"></div>
-                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Telegram Support / Channel Link</label><input type="text" id="set-telegram" class="pixel-input"></div>
-                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Facebook Page / Group Link</label><input type="text" id="set-facebook" class="pixel-input"></div>
-                            <div><label class="block text-xs font-bold text-slate-600 mb-1">YouTube Channel Link</label><input type="text" id="set-youtube" class="pixel-input"></div>
+                            <div><label class="block text-xs font-bold text-slate-600 mb-1">WhatsApp Number (with country code, e.g. 88017...)</label><input type="text" id="set-whatsapp" class="FSL-input"></div>
+                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Telegram Support / Channel Link</label><input type="text" id="set-telegram" class="FSL-input"></div>
+                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Facebook Page / Group Link</label><input type="text" id="set-facebook" class="FSL-input"></div>
+                            <div><label class="block text-xs font-bold text-slate-600 mb-1">YouTube Channel Link</label><input type="text" id="set-youtube" class="FSL-input"></div>
                         </div>
-                        <button onclick="saveSettings('social')" class="pixel-btn mt-5 w-full"><i class="fas fa-save"></i> Save Social Links</button>
+                        <button onclick="saveSettings('social')" class="FSL-btn mt-5 w-full"><i class="fas fa-save"></i> Save Social Links</button>
                     </div>
 
-                    <div class="pixel-card">
+                    <div class="FSL-card">
                         <div class="flex items-center gap-2.5 mb-5 pb-3 border-b border-slate-100">
                             <div class="w-9 h-9 rounded-xl bg-pink-50 text-pink-600 flex items-center justify-center"><i class="fas fa-mobile-alt"></i></div>
                             <div>
@@ -1790,20 +1790,20 @@
                             </div>
                         </div>
                         <div class="space-y-4">
-                            <div><label class="block text-xs font-bold text-slate-600 mb-1">bKash Personal/Merchant Number</label><input type="text" id="set-bkash" class="pixel-input"></div>
-                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Nagad Personal/Merchant Number</label><input type="text" id="set-nagad" class="pixel-input"></div>
-                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Rocket Personal/Merchant Number</label><input type="text" id="set-rocket" class="pixel-input"></div>
+                            <div><label class="block text-xs font-bold text-slate-600 mb-1">bKash Personal/Merchant Number</label><input type="text" id="set-bkash" class="FSL-input"></div>
+                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Nagad Personal/Merchant Number</label><input type="text" id="set-nagad" class="FSL-input"></div>
+                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Rocket Personal/Merchant Number</label><input type="text" id="set-rocket" class="FSL-input"></div>
                             <div class="pt-3 border-t border-slate-100 space-y-3">
                                 <p class="text-xs font-bold text-slate-500">Payment Icon Image URLs</p>
-                                <div><label class="block text-xs font-bold text-slate-600 mb-1">bKash Icon URL</label><input type="url" id="set-bkash-logo" class="pixel-input"></div>
-                                <div><label class="block text-xs font-bold text-slate-600 mb-1">Nagad Icon URL</label><input type="url" id="set-nagad-logo" class="pixel-input"></div>
-                                <div><label class="block text-xs font-bold text-slate-600 mb-1">Rocket Icon URL</label><input type="url" id="set-rocket-logo" class="pixel-input"></div>
+                                <div><label class="block text-xs font-bold text-slate-600 mb-1">bKash Icon URL</label><input type="url" id="set-bkash-logo" class="FSL-input"></div>
+                                <div><label class="block text-xs font-bold text-slate-600 mb-1">Nagad Icon URL</label><input type="url" id="set-nagad-logo" class="FSL-input"></div>
+                                <div><label class="block text-xs font-bold text-slate-600 mb-1">Rocket Icon URL</label><input type="url" id="set-rocket-logo" class="FSL-input"></div>
                             </div>
                         </div>
-                        <button onclick="saveSettings('payment')" class="pixel-btn mt-5 w-full"><i class="fas fa-save"></i> Save Payment Numbers</button>
+                        <button onclick="saveSettings('payment')" class="FSL-btn mt-5 w-full"><i class="fas fa-save"></i> Save Payment Numbers</button>
                     </div>
 
-                    <div class="pixel-card">
+                    <div class="FSL-card">
                         <div class="flex items-center gap-2.5 mb-5 pb-3 border-b border-slate-100">
                             <div class="w-9 h-9 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center"><i class="fas fa-cogs"></i></div>
                             <div>
@@ -1812,8 +1812,8 @@
                             </div>
                         </div>
                         <div class="space-y-4">
-                            <div><label class="block text-xs font-bold text-slate-600 mb-1">How To Add Money (YouTube Video ID)</label><input type="text" id="set-tutorial-vid" class="pixel-input" placeholder="e.g. dQw4w9WgXcQ"></div>
-                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Player Name Check API URL</label><input type="url" id="set-uid-api" class="pixel-input" placeholder="https://tyno-ffinfo.tzsm.workers.dev/name?uid={uid}"></div>
+                            <div><label class="block text-xs font-bold text-slate-600 mb-1">How To Add Money (YouTube Video ID)</label><input type="text" id="set-tutorial-vid" class="FSL-input" placeholder="e.g. dQw4w9WgXcQ"></div>
+                            <div><label class="block text-xs font-bold text-slate-600 mb-1">Player Name Check API URL</label><input type="url" id="set-uid-api" class="FSL-input" placeholder="https://tyno-ffinfo.tzsm.workers.dev/name?uid={uid}"></div>
                                 <p class="text-[10px] text-slate-400 mt-1">Supports any JSON response containing <code class="text-slate-600">username</code>, <code class="text-slate-600">name</code>, <code class="text-slate-600">nickname</code>, or <code class="text-slate-600">player_name</code>.</p>
                             </div>
                             <div class="p-3.5 rounded-2xl bg-purple-50/70 border border-purple-200 space-y-2">
@@ -1821,8 +1821,8 @@
                                     <i class="fas fa-thumbs-up mr-1"></i> Free Fire Like Auto-Delivery API URL
                                 </label>
                                 <div class="flex gap-2">
-                                    <input type="url" id="set-ff-like-api" class="pixel-input flex-1 bg-white" placeholder="https://api.demosite.top/api/ff-likes?api=KEY&uid={uid}&like={like}">
-                                    <button type="button" onclick="testAdminLikeApi()" class="pixel-btn-outline whitespace-nowrap px-3 py-2 text-xs font-bold bg-white">
+                                    <input type="url" id="set-ff-like-api" class="FSL-input flex-1 bg-white" placeholder="https://api.demosite.top/api/ff-likes?api=KEY&uid={uid}&like={like}">
+                                    <button type="button" onclick="testAdminLikeApi()" class="FSL-btn-outline whitespace-nowrap px-3 py-2 text-xs font-bold bg-white">
                                         <i class="fas fa-bolt text-[#5215b5]"></i> Test Like API
                                     </button>
                                 </div>
@@ -1831,12 +1831,12 @@
                                 </p>
                             </div>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                                <div><label class="block text-xs font-bold text-slate-600 mb-1">Promo Image URL (Link)</label><input type="url" id="set-promo-img" class="pixel-input" placeholder="https://..."></div>
-                                <div><label class="block text-xs font-bold text-slate-600 mb-1">Promo Target Link</label><input type="url" id="set-promo-link" class="pixel-input" placeholder="https://..."></div>
+                                <div><label class="block text-xs font-bold text-slate-600 mb-1">Promo Image URL (Link)</label><input type="url" id="set-promo-img" class="FSL-input" placeholder="https://..."></div>
+                                <div><label class="block text-xs font-bold text-slate-600 mb-1">Promo Target Link</label><input type="url" id="set-promo-link" class="FSL-input" placeholder="https://..."></div>
                             </div>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                                <div><label class="block text-xs font-bold text-slate-600 mb-1">Favicon Image URL (Link)</label><input type="url" id="set-favicon-url" class="pixel-input" placeholder="https://..."></div>
-                                <div><label class="block text-xs font-bold text-slate-600 mb-1">Wallet Icon URL (Link)</label><input type="url" id="set-wallet-logo" class="pixel-input" placeholder="https://..."></div>
+                                <div><label class="block text-xs font-bold text-slate-600 mb-1">Favicon Image URL (Link)</label><input type="url" id="set-favicon-url" class="FSL-input" placeholder="https://..."></div>
+                                <div><label class="block text-xs font-bold text-slate-600 mb-1">Wallet Icon URL (Link)</label><input type="url" id="set-wallet-logo" class="FSL-input" placeholder="https://..."></div>
                             </div>
                             <div class="flex items-center justify-between p-3.5 bg-purple-50/70 rounded-xl border border-purple-200">
                                 <div>
@@ -1846,55 +1846,55 @@
                                 <input type="checkbox" id="set-autopay" class="w-5 h-5 accent-[#5215b5] rounded cursor-pointer">
                             </div>
                         </div>
-                        <button onclick="saveSettings('advanced')" class="pixel-btn mt-5 w-full"><i class="fas fa-save"></i> Save Advanced Config</button>
+                        <button onclick="saveSettings('advanced')" class="FSL-btn mt-5 w-full"><i class="fas fa-save"></i> Save Advanced Config</button>
                     </div>
                 </div>
             </div>
 
-            <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+            <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
             <div id="view-categories" class="view-section hidden space-y-6">
-                <div class="pixel-card">
+                <div class="FSL-card">
                     <h3 class="text-base font-bold text-slate-800 mb-4 flex items-center gap-2">
                         <i class="fas fa-plus-circle text-[#5215b5]"></i> Add New Category
                     </h3>
                     <div class="flex flex-col md:flex-row gap-3">
-                        <input type="text" id="cat-name" placeholder="Category Title (e.g. Regular Topup)" class="pixel-input flex-1">
-                        <input type="number" id="cat-slot" placeholder="Display Order Slot (e.g. 1)" class="pixel-input w-full md:w-52">
-                        <button onclick="addCategory()" class="pixel-btn whitespace-nowrap"><i class="fas fa-plus"></i> Add Category</button>
+                        <input type="text" id="cat-name" placeholder="Category Title (e.g. Regular Topup)" class="FSL-input flex-1">
+                        <input type="number" id="cat-slot" placeholder="Display Order Slot (e.g. 1)" class="FSL-input w-full md:w-52">
+                        <button onclick="addCategory()" class="FSL-btn whitespace-nowrap"><i class="fas fa-plus"></i> Add Category</button>
                     </div>
                 </div>
-                <div class="pixel-table-wrap">
-                    <table class="pixel-table">
+                <div class="FSL-table-wrap">
+                    <table class="FSL-table">
                         <thead><tr><th>SlotOrder</th><th>Category Name</th><th>Total Games</th><th class="w-44 text-center">Actions</th></tr></thead>
                         <tbody id="cat-list"></tbody>
                     </table>
                 </div>
             </div>
 
-            <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+            <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
             <div id="view-services" class="view-section hidden space-y-6">
-                <div class="pixel-card">
+                <div class="FSL-card">
                     <h3 class="text-base font-bold text-slate-800 mb-4 flex items-center gap-2">
                         <i class="fas fa-gamepad text-[#5215b5]"></i> Add New Game / Service
                     </h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                         <div>
                             <label class="block text-xs font-bold text-slate-600 mb-1">Service / Game Name</label>
-                            <input type="text" id="srv-name" placeholder="e.g. UID Topup / Free Fire" class="pixel-input">
+                            <input type="text" id="srv-name" placeholder="e.g. UID Topup / Free Fire" class="FSL-input">
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-slate-600 mb-1">Game Thumbnail Image URL</label>
-                            <input type="text" id="srv-image" placeholder="https://..." class="pixel-input">
+                            <input type="text" id="srv-image" placeholder="https://..." class="FSL-input">
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-slate-600 mb-1">Select Category</label>
-                            <select id="srv-category" class="pixel-input">
+                            <select id="srv-category" class="FSL-input">
                                 <option value="">Select Category</option>
                             </select>
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-slate-600 mb-1">Delivery System Type</label>
-                            <select id="srv-type" class="pixel-input">
+                            <select id="srv-type" class="FSL-input">
                                 <option value="uid">UID TopUp (Manual Delivery)</option>
                                 <option value="code">Voucher Code (Instant Auto Code)</option>
                                 <option value="auto-topup">Auto TopUp (API Delivery)</option>
@@ -1903,57 +1903,57 @@
                     </div>
                     <div class="mb-4">
                         <label class="block text-xs font-bold text-slate-600 mb-1">Auto-Delivery / Like API URL (Optional - for FF Like or Auto TopUp)</label>
-                        <input type="url" id="srv-api-url" placeholder="https://api.demosite.top/api/ff-likes?api=KEY&uid={uid}&like={like}" class="pixel-input font-mono text-xs">
+                        <input type="url" id="srv-api-url" placeholder="https://api.demosite.top/api/ff-likes?api=KEY&uid={uid}&like={like}" class="FSL-input font-mono text-xs">
                     </div>
                     <div class="mb-4">
                         <label class="block text-xs font-bold text-slate-600 mb-1">Rules & Conditions (One per line)</label>
-                        <textarea id="srv-rules" placeholder="সঠিক Player ID দিন..." class="pixel-input h-20"></textarea>
+                        <textarea id="srv-rules" placeholder="সঠিক Player ID দিন..." class="FSL-input h-20"></textarea>
                     </div>
-                    <button onclick="addService()" class="pixel-btn w-full"><i class="fas fa-plus"></i> Create Game / Service</button>
+                    <button onclick="addService()" class="FSL-btn w-full"><i class="fas fa-plus"></i> Create Game / Service</button>
                 </div>
-                <div class="pixel-table-wrap">
-                    <table class="pixel-table">
+                <div class="FSL-table-wrap">
+                    <table class="FSL-table">
                         <thead><tr><th class="w-20 text-center">Icon</th><th>Service Name</th><th>Category</th><th>Delivery Type</th><th class="w-64 text-center">Actions</th></tr></thead>
                         <tbody id="srv-list"></tbody>
                     </table>
                 </div>
             </div>
 
-            <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+            <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
             <div id="view-products" class="view-section hidden space-y-6">
                 <div class="flex flex-wrap items-center justify-between gap-3">
-                    <button onclick="switchView('services')" class="pixel-btn-outline"><i class="fas fa-arrow-left"></i> Back to Services</button>
+                    <button onclick="switchView('services')" class="FSL-btn-outline"><i class="fas fa-arrow-left"></i> Back to Services</button>
                     <span class="text-xs font-bold px-3 py-1.5 rounded-full bg-purple-100 text-[#5215b5]" id="prod-service-badge">Service Packages</span>
                 </div>
-                <div class="pixel-card">
+                <div class="FSL-card">
                     <h3 class="text-base font-bold text-slate-800 mb-4">Manage Recharge Packages for: <span id="prod-service-name" class="text-[#5215b5]"></span></h3>
                     <div class="flex flex-col md:flex-row gap-3">
-                        <input type="text" id="prod-name" placeholder="Package Name (e.g. 115 Diamonds)" class="pixel-input flex-1">
-                        <input type="number" id="prod-price" placeholder="Selling Price (৳)" class="pixel-input w-full md:w-48">
-                        <input type="url" id="prod-image" placeholder="Product image URL (optional)" class="pixel-input flex-1">
-                        <button onclick="addProduct()" class="pixel-btn whitespace-nowrap"><i class="fas fa-plus"></i> Add Package</button>
+                        <input type="text" id="prod-name" placeholder="Package Name (e.g. 115 Diamonds)" class="FSL-input flex-1">
+                        <input type="number" id="prod-price" placeholder="Selling Price (৳)" class="FSL-input w-full md:w-48">
+                        <input type="url" id="prod-image" placeholder="Product image URL (optional)" class="FSL-input flex-1">
+                        <button onclick="addProduct()" class="FSL-btn whitespace-nowrap"><i class="fas fa-plus"></i> Add Package</button>
                     </div>
                 </div>
-                <div class="pixel-table-wrap">
-                    <table class="pixel-table">
+                <div class="FSL-table-wrap">
+                    <table class="FSL-table">
                         <thead><tr><th>Package</th><th>Price (৳)</th><th>Image</th><th>Available Stock</th><th class="w-64 text-center">Actions</th></tr></thead>
                         <tbody id="prod-list"></tbody>
                     </table>
                 </div>
             </div>
 
-            <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+            <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
             <div id="view-stock" class="view-section hidden space-y-6">
-                <button onclick="backToProductsView()" class="pixel-btn-outline"><i class="fas fa-arrow-left"></i> Back to Packages</button>
-                <div class="pixel-card">
+                <button onclick="backToProductsView()" class="FSL-btn-outline"><i class="fas fa-arrow-left"></i> Back to Packages</button>
+                <div class="FSL-card">
                     <h3 class="text-base font-bold text-slate-800 mb-4">Bulk Import Codes for: <span id="stock-prod-name" class="text-[#5215b5]"></span></h3>
-                    <textarea id="stock-codes" placeholder="Paste voucher or UniPin codes here (One code per line)" class="pixel-input h-40 mb-4 font-mono text-xs"></textarea>
-                    <button onclick="addStock()" class="pixel-btn w-full"><i class="fas fa-file-import"></i> Import Stock Codes</button>
+                    <textarea id="stock-codes" placeholder="Paste voucher or UniPin codes here (One code per line)" class="FSL-input h-40 mb-4 font-mono text-xs"></textarea>
+                    <button onclick="addStock()" class="FSL-btn w-full"><i class="fas fa-file-import"></i> Import Stock Codes</button>
                 </div>
-                <div class="pixel-card">
+                <div class="FSL-card">
                     <h3 class="text-base font-bold text-slate-800 mb-4">Available Stock Codes</h3>
-                    <div class="pixel-table-wrap">
-                        <table class="pixel-table">
+                    <div class="FSL-table-wrap">
+                        <table class="FSL-table">
                             <thead><tr><th>Voucher / Redeem Code</th><th>Added Date</th><th class="w-40 text-center">Actions</th></tr></thead>
                             <tbody id="stock-list"></tbody>
                         </table>
@@ -1961,16 +1961,16 @@
                 </div>
             </div>
 
-            <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+            <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
             <div id="view-orders" class="view-section hidden space-y-6">
-                <div class="pixel-card">
+                <div class="FSL-card">
                     <div class="flex flex-col lg:flex-row justify-between items-stretch lg:items-center gap-4">
                         <div class="relative flex-1">
-                            <input type="text" id="order-search" placeholder="Search by Player ID, Customer Name, Email or Package..." class="pixel-input pl-10" onkeyup="renderOrdersTable()">
+                            <input type="text" id="order-search" placeholder="Search by Player ID, Customer Name, Email or Package..." class="FSL-input pl-10" onkeyup="renderOrdersTable()">
                             <i class="fas fa-search absolute left-3.5 top-3.5 text-slate-400"></i>
                         </div>
                         <div class="flex items-center gap-3">
-                            <select id="order-filter" class="pixel-input w-full sm:w-52" onchange="loadOrders()">
+                            <select id="order-filter" class="FSL-input w-full sm:w-52" onchange="loadOrders()">
                                 <option value="all">All Statuses</option>
                                 <option value="pending">Pending</option>
                                 <option value="processing">Processing</option>
@@ -1980,130 +1980,130 @@
                         </div>
                     </div>
                 </div>
-                <div class="pixel-table-wrap">
-                    <table class="pixel-table">
+                <div class="FSL-table-wrap">
+                    <table class="FSL-table">
                         <thead><tr><th>Date</th><th>Customer</th><th>Game & Package</th><th>Player ID / Voucher Code</th><th>Price</th><th>Status</th><th class="w-40 text-center">Actions</th></tr></thead>
                         <tbody id="order-list"></tbody>
                     </table>
                 </div>
             </div>
 
-            <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+            <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
             <div id="view-deposits" class="view-section hidden space-y-6">
-                <div class="pixel-card flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-4">
+                <div class="FSL-card flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-4">
                     <div class="relative flex-1">
-                        <input type="text" id="deposit-search" placeholder="Search by TrxID, User Email or Method..." class="pixel-input pl-10" onkeyup="renderDepositsTable()">
+                        <input type="text" id="deposit-search" placeholder="Search by TrxID, User Email or Method..." class="FSL-input pl-10" onkeyup="renderDepositsTable()">
                         <i class="fas fa-search absolute left-3.5 top-3.5 text-slate-400"></i>
                     </div>
-                    <select id="deposit-filter" class="pixel-input w-full sm:w-48" onchange="renderDepositsTable()">
+                    <select id="deposit-filter" class="FSL-input w-full sm:w-48" onchange="renderDepositsTable()">
                         <option value="all">All Requests</option>
                         <option value="pending">Pending Only</option>
                         <option value="approved">Approved</option>
                         <option value="rejected">Rejected</option>
                     </select>
                 </div>
-                <div class="pixel-table-wrap">
-                    <table class="pixel-table">
+                <div class="FSL-table-wrap">
+                    <table class="FSL-table">
                         <thead><tr><th>Date</th><th>User Email</th><th>Method</th><th>TrxID</th><th>Amount</th><th>Status</th><th class="w-52 text-center">Actions</th></tr></thead>
                         <tbody id="deposit-list"></tbody>
                     </table>
                 </div>
             </div>
 
-            <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+            <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
             <div id="view-users" class="view-section hidden space-y-6">
-                <div class="pixel-card">
+                <div class="FSL-card">
                     <div class="flex flex-col lg:flex-row justify-between items-stretch lg:items-center gap-4">
                         <div class="relative flex-1">
-                            <input type="text" id="user-search" placeholder="Search users by Name, Email or Phone..." class="pixel-input pl-10" onkeyup="searchUsers()">
+                            <input type="text" id="user-search" placeholder="Search users by Name, Email or Phone..." class="FSL-input pl-10" onkeyup="searchUsers()">
                             <i class="fas fa-search absolute left-3.5 top-3.5 text-slate-400"></i>
                         </div>
-                        <button onclick="openAddUserModal()" class="pixel-btn whitespace-nowrap"><i class="fas fa-user-plus"></i> Add New User</button>
+                        <button onclick="openAddUserModal()" class="FSL-btn whitespace-nowrap"><i class="fas fa-user-plus"></i> Add New User</button>
                     </div>
                 </div>
-                <div class="pixel-table-wrap">
-                    <table class="pixel-table">
+                <div class="FSL-table-wrap">
+                    <table class="FSL-table">
                         <thead><tr><th>Joined</th><th>User Name</th><th>Email & Phone</th><th>Wallet Balance</th><th class="w-48 text-center">Actions</th></tr></thead>
                         <tbody id="user-list"></tbody>
                     </table>
                 </div>
             </div>
 
-            <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+            <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
             <div id="view-unpin" class="view-section hidden space-y-6">
-                <div class="pixel-card">
+                <div class="FSL-card">
                     <h3 class="text-base font-bold text-slate-800 mb-4">Add New Unpin / Redeem Code</h3>
                     <div class="flex flex-col md:flex-row gap-3">
-                        <input type="text" id="unpin-code" placeholder="Enter Unpin Code (e.g. UPBD-8899-XXXX)" class="pixel-input flex-1 font-mono">
-                        <button onclick="addUnpinCode()" class="pixel-btn whitespace-nowrap"><i class="fas fa-plus"></i> Add Unpin Code</button>
+                        <input type="text" id="unpin-code" placeholder="Enter Unpin Code (e.g. UPBD-8899-XXXX)" class="FSL-input flex-1 font-mono">
+                        <button onclick="addUnpinCode()" class="FSL-btn whitespace-nowrap"><i class="fas fa-plus"></i> Add Unpin Code</button>
                     </div>
                 </div>
-                <div class="pixel-table-wrap">
-                    <table class="pixel-table">
+                <div class="FSL-table-wrap">
+                    <table class="FSL-table">
                         <thead><tr><th>Unpin Code</th><th>Added Date</th><th class="w-44 text-center">Actions</th></tr></thead>
                         <tbody id="unpin-list"></tbody>
                     </table>
                 </div>
             </div>
 
-            <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+            <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
             <div id="view-tutorials" class="view-section hidden space-y-6">
-                <div class="pixel-card">
+                <div class="FSL-card">
                     <h3 class="text-base font-bold text-slate-800 mb-4">Add Video Tutorial</h3>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-                        <input type="text" id="tut-title" placeholder="Tutorial Title" class="pixel-input">
-                        <input type="text" id="tut-link" placeholder="YouTube Video URL" class="pixel-input">
-                        <input type="text" id="tut-thumb" placeholder="Thumbnail Image URL" class="pixel-input">
+                        <input type="text" id="tut-title" placeholder="Tutorial Title" class="FSL-input">
+                        <input type="text" id="tut-link" placeholder="YouTube Video URL" class="FSL-input">
+                        <input type="text" id="tut-thumb" placeholder="Thumbnail Image URL" class="FSL-input">
                     </div>
-                    <button onclick="addTutorial()" class="pixel-btn w-full"><i class="fas fa-plus"></i> Publish Tutorial</button>
+                    <button onclick="addTutorial()" class="FSL-btn w-full"><i class="fas fa-plus"></i> Publish Tutorial</button>
                 </div>
-                <div class="pixel-table-wrap">
-                    <table class="pixel-table">
+                <div class="FSL-table-wrap">
+                    <table class="FSL-table">
                         <thead><tr><th class="w-28 text-center">Thumbnail</th><th>Tutorial Title</th><th>Video Link</th><th class="w-44 text-center">Actions</th></tr></thead>
                         <tbody id="tut-list"></tbody>
                     </table>
                 </div>
             </div>
 
-            <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+            <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
             <div id="view-banners" class="view-section hidden space-y-6">
-                <div class="pixel-card">
+                <div class="FSL-card">
                     <h3 class="text-base font-bold text-slate-800 mb-4">Add Homepage Slider Banner</h3>
                     <div class="flex flex-col md:flex-row gap-3">
-                        <input type="text" id="ban-img" placeholder="Banner Image URL (16:9 recommended)" class="pixel-input flex-1">
-                        <button onclick="addBanner()" class="pixel-btn whitespace-nowrap"><i class="fas fa-plus"></i> Add Banner</button>
+                        <input type="text" id="ban-img" placeholder="Banner Image URL (16:9 recommended)" class="FSL-input flex-1">
+                        <button onclick="addBanner()" class="FSL-btn whitespace-nowrap"><i class="fas fa-plus"></i> Add Banner</button>
                     </div>
                 </div>
-                <div class="pixel-table-wrap">
-                    <table class="pixel-table">
+                <div class="FSL-table-wrap">
+                    <table class="FSL-table">
                         <thead><tr><th class="w-40 text-center">Banner Preview</th><th>Image URL</th><th class="w-44 text-center">Actions</th></tr></thead>
                         <tbody id="ban-list"></tbody>
                     </table>
                 </div>
             </div>
 
-            <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+            <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
             <footer class="pt-6 pb-4 text-center text-xs text-slate-400 border-t border-slate-200/80">
-                © 2026 <b>Pixel Topup</b> Admin Panel • All Rights Reserved • Developed by <a href="https://t.me/infinity_codex" target="_blank" class="font-bold text-[#5215b5] hover:underline">Unknown Hex</a>
+                © 2026 <b>FSL Topup</b> Admin Panel • All Rights Reserved • Developed by <a href="https://t.me/TraderFaisalAhmed" target="_blank" class="font-bold text-[#5215b5] hover:underline">FaisalAhmed</a>
             </footer>
         </div>
     </main>
 </div>
 
-    <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+    <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
 <script>
-    // DEVELOP BY https://t.me/Infinity_Codex
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
 </script>
 
-    <!-- DEVELOP BY https://t.me/Infinity_Codex -->
+    <!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
 <script>
-    // DEVELOP BY https://t.me/Infinity_Codex
-    // DEVELOP BY https://t.me/Infinity_Codex
-    const firebaseConfig = window.PIXEL_FIREBASE_CONFIG;
-    if (!window.pixelFirebaseConfigReady(firebaseConfig)) {
-        window.showPixelFirebaseSetupNotice();
-        throw new Error('Check the inline Firebase Web config before using Pixel Topup.');
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
+    const firebaseConfig = window.FSL_FIREBASE_CONFIG;
+    if (!window.FSLFirebaseConfigReady(firebaseConfig)) {
+        window.showFSLFirebaseSetupNotice();
+        throw new Error('Check the inline Firebase Web config before using FSL Topup.');
     }
     if (!firebaseConfig.databaseURL && firebaseConfig.projectId) {
         firebaseConfig.databaseURL = `https://${firebaseConfig.projectId}-default-rtdb.firebaseio.com`;
@@ -2118,19 +2118,19 @@
         Rocket: ""
     };
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function escapeHtml(value) {
         return String(value ?? '').replace(/[&<>"']/g, (char) => ({
             '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
         })[char]);
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function jsAttr(value) {
         return escapeHtml(JSON.stringify(String(value ?? '')));
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function safeMediaUrl(value, fallback = '') {
         const candidate = String(value || '').trim();
         if (!candidate) return fallback;
@@ -2140,14 +2140,14 @@
         try {
             const base = (window.location.origin && window.location.origin !== 'null' && window.location.origin.startsWith('http'))
                 ? window.location.origin
-                : 'https://pixeltopup-fb8a3.firebaseapp.com';
+                : 'https://FSLtopup-fb8a3.firebaseapp.com';
             const url = new URL(candidate, base);
             if (url.protocol === 'https:' || url.protocol === 'http:') return url.href;
         } catch (_) { }
         return fallback;
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function safeTutorialUrl(value) {
         const candidate = String(value || '').trim();
         if (!candidate) return '#';
@@ -2155,14 +2155,14 @@
         try {
             const base = (window.location.origin && window.location.origin !== 'null' && window.location.origin.startsWith('http'))
                 ? window.location.origin
-                : 'https://pixeltopup-fb8a3.firebaseapp.com';
+                : 'https://FSLtopup-fb8a3.firebaseapp.com';
             const url = new URL(candidate, base);
             if (url.protocol === 'https:' || url.protocol === 'http:') return url.href;
         } catch (_) { }
         return '#';
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function parseRecordDate(val) {
         if (!val) return new Date(0);
         if (typeof val === 'number') return new Date(val);
@@ -2171,7 +2171,7 @@
         return isNaN(parsed.getTime()) ? new Date(0) : parsed;
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     async function isAdminUser(user, autoClaimIfEmpty = false) {
         if (!user) return false;
         try {
@@ -2242,7 +2242,7 @@
     let activeProductRef = null;
     let userProfileRef = null;
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function extractYoutubeId(input) {
         const raw = String(input || '').trim();
         if (!raw) return '';
@@ -2258,7 +2258,7 @@
         return '';
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadHowToVideo() {
         db.ref("settings/videos").on("value", (snap) => {
             const data = snap.val() || {};
@@ -2269,7 +2269,7 @@
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function updateVideoFrame() {
         const videoFrame = document.getElementById("new-tutorial-video");
         const oldFrame = document.getElementById("how-to-add-money-video");
@@ -2287,12 +2287,12 @@
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadGlobalSettings() {
         db.ref("settings/general").on("value", (snap) => {
             const data = snap.val() || {};
             const logoUrl = safeMediaUrl(data.logoUrl || data.headerLogoUrl, '');
-            const siteName = data.siteName || "Pixel Topup";
+            const siteName = data.siteName || "FSL Topup";
 
             isAutoPayEnabled = Boolean(data.autoPayEnabled);
             playerNameCheckApiUrl = data.playerNameCheckApiUrl ? String(data.playerNameCheckApiUrl).trim() : '';
@@ -2424,7 +2424,7 @@
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function toggleAuth(view) {
         const loginTab = document.getElementById('auth-tab-login');
         const regTab = document.getElementById('auth-tab-register');
@@ -2445,7 +2445,7 @@
         }
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function handleRegister() {
         const name = document.getElementById('reg-name').value.trim();
         const phone = document.getElementById('reg-phone').value.trim();
@@ -2481,7 +2481,7 @@
     const DEFAULT_ADMIN_EMAIL = "admin@gmail.com";
     const DEFAULT_ADMIN_PASS = "admin@123";
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     async function checkIsAdminCredentials(email, pass) {
         const normEmail = String(email || '').trim().toLowerCase();
         if (normEmail === DEFAULT_ADMIN_EMAIL.toLowerCase() && pass === DEFAULT_ADMIN_PASS) {
@@ -2508,7 +2508,7 @@
         return false;
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function handleLogin() {
         const emailInput = document.getElementById('login-email');
         const passInput = document.getElementById('login-pass');
@@ -2525,7 +2525,7 @@
                           '<div class="w-12 h-12 rounded-2xl bg-purple-100 text-[#5215b5] flex items-center justify-center mx-auto mb-2 text-xl font-bold shadow-sm">' +
                           '<i class="fas fa-user-shield"></i></div>' +
                           '<p class="text-sm font-bold text-slate-800">এডমিন তথ্য সনাক্ত হয়েছে!</p>' +
-                          '<p class="text-xs text-slate-500 mt-1">আপনাকে সরাসরি Pixel Admin প্যানেলে নিয়ে যাওয়া হচ্ছে...</p></div>',
+                          '<p class="text-xs text-slate-500 mt-1">আপনাকে সরাসরি FSL Admin প্যানেলে নিয়ে যাওয়া হচ্ছে...</p></div>',
                     icon: 'success',
                     showConfirmButton: false,
                     timer: 1600
@@ -2575,7 +2575,7 @@
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function handleGoogleLogin() {
         const provider = new firebase.auth.GoogleAuthProvider();
         auth.signInWithPopup(provider).then(async (result) => {
@@ -2614,7 +2614,7 @@
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function updateProfilePhotoLink() {
         if (!currentUser) return showAuthPage();
         Swal.fire({
@@ -2635,19 +2635,19 @@
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function showAuthPage() {
         showSec('auth');
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function handleLogout() {
         auth.signOut().then(() => {
             showSec('home');
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     auth.onAuthStateChanged((user) => {
         if (userProfileRef) {
             userProfileRef.off();
@@ -2691,7 +2691,7 @@
         }
     });
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadUserData(uid) {
         userProfileRef = db.ref('users/' + uid);
         userProfileRef.on('value', (snap) => {
@@ -2735,7 +2735,7 @@
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function calculateUserStats(uid) {
         const totalOrdersEl = document.getElementById('acc-total-orders');
         const totalSpentEl = document.getElementById('acc-total-spent');
@@ -2776,7 +2776,7 @@
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadAppContent() {
         loadGlobalSettings();
         loadHowToVideo();
@@ -2786,7 +2786,7 @@
         loadRecentOrdersGlobal();
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function renderGamesAndCategories() {
         const listContainer = document.getElementById('services-list');
         if (!listContainer) return;
@@ -2874,7 +2874,7 @@
         }
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadGamesAndCategories() {
         const listContainer = document.getElementById('services-list');
         if (listContainer) {
@@ -2895,7 +2895,7 @@
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadTutorials() {
         db.ref("tutorials").on("value", (snapshot) => {
             const container = document.getElementById('tutorial-list-container');
@@ -2956,7 +2956,7 @@
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function openTopUpPage(gameId, gameName, gameImg) {
         selectedGameId = gameId;
         selectedGameName = gameName;
@@ -3064,7 +3064,7 @@
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function selectProduct(element, name, price, id) {
         document.querySelectorAll('.product-card').forEach(el => el.classList.remove('selected'));
         element.classList.add('selected');
@@ -3072,7 +3072,7 @@
         document.getElementById('total-price').innerText = selectedProduct.price;
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function selectPaymentOption(option) {
         selectedPaymentMethod = option;
         document.querySelectorAll('.pay-option-card').forEach(el => el.classList.remove('selected'));
@@ -3080,7 +3080,7 @@
         if (target) target.classList.add('selected');
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     async function processOrder() {
         if (!currentUser) {
             promptLoginModal('topup');
@@ -3162,14 +3162,14 @@
     
     let ffLikeApiUrlGlobal = "";
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function extractLikeCountFromPackage(pkgName) {
         const str = String(pkgName || '');
         const m = str.match(/(\d+)/);
         return m ? m[1] : '100';
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function isLikeOrderOrService(serviceId, gameName, serviceType) {
         const sId = String(serviceId || '').toLowerCase();
         const gName = String(gameName || '').toLowerCase();
@@ -3178,7 +3178,7 @@
         return false;
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function buildLikeApiRequestUrl(rawTemplate, uid, pkgName, serverName = 'BD') {
         let url = String(rawTemplate || '').trim();
         if (!url) return '';
@@ -3226,7 +3226,7 @@
         return url;
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     async function callLikeApiEndpoint(targetUrl) {
         // 1. Try direct fetch
         try {
@@ -3286,7 +3286,7 @@
         throw new Error('Could not reach Like API server');
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function formatLikeApiResultSummary(rawText, defaultLikes) {
         if (!rawText) return `Like Delivered (${defaultLikes} Likes)`;
         try {
@@ -3308,7 +3308,7 @@
         return cleanStr ? cleanStr.slice(0, 80) : `Auto Delivered (${defaultLikes} Likes)`;
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     async function resolveLikeApiTemplateForService(serviceId) {
         // Check service-specific apiUrl first, then global ffLikeApiUrl
         try {
@@ -3326,7 +3326,7 @@
         return ffLikeApiUrlGlobal || '';
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     async function submitFirebaseOrder(playerId) {
         if (!currentUser || !selectedProduct || !selectedGameId) {
             return Swal.fire('Error', 'Please sign in and select a valid product.', 'error');
@@ -3452,16 +3452,16 @@
         }
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function processVoucherOrder(playerId) { return submitFirebaseOrder(playerId); }
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function processUidOrder(playerId) { return submitFirebaseOrder(playerId); }
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function processAutoTopUpOrder(playerId) { return submitFirebaseOrder(playerId); }
 
     let verifiedPlayerName = "";
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function resetUidCheckState() {
         verifiedPlayerName = "";
         const vBox = document.getElementById('verified-player-box');
@@ -3476,7 +3476,7 @@
         }
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function buildUidApiUrl(templateUrl, uid) {
         const cleanTemplate = String(templateUrl || '').trim();
         if (!cleanTemplate) return '';
@@ -3500,7 +3500,7 @@
         return cleanTemplate + '?uid=' + encodedUid;
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function extractPlayerNameFromResponse(payload, uid) {
         if (payload == null) return '';
 
@@ -3562,7 +3562,7 @@
         return '';
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     async function fetchApiWithFallback(targetUrl) {
         // 1. Direct fetch
         try {
@@ -3630,7 +3630,7 @@
         throw new Error('All API requests failed');
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     async function uidCheck() {
         const uidInput = document.getElementById("game-player-id");
         const uid = uidInput ? uidInput.value.trim() : "";
@@ -3694,7 +3694,7 @@
         }
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function goToAuthPage() {
         // Guarantee closing SweetAlert2 completely and removing any backdrop
         try {
@@ -3730,7 +3730,7 @@
         document.body.scrollTop = 0;
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function promptLoginModal(secId) {
         redirectAfterLogin = secId;
 
@@ -3746,7 +3746,7 @@
             allowOutsideClick: true,
             backdrop: 'rgba(11, 16, 59, 0.78)',
             customClass: {
-                popup: 'pixel-light-modal-popup',
+                popup: 'FSL-light-modal-popup',
                 timerProgressBar: 'swal2-timer-progress-bar'
             }
         }).then(() => {
@@ -3754,7 +3754,7 @@
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function showSec(secId, customNotice = '') {
         const protectedSections = ['account', 'history', 'addmoney'];
         const noticeBanner = document.getElementById('auth-notice-banner');
@@ -3801,7 +3801,7 @@
         document.body.scrollTop = 0;
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadHistory() {
         const list = document.getElementById('history-list');
         if (!currentUser) {
@@ -3887,7 +3887,7 @@
             });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadRecentOrdersGlobal() {
         const container = document.getElementById('latest-orders-list');
         const avatarColors = ['bg-[#0259a6]', 'bg-[#38c112]', 'bg-[#5215b5]', 'bg-[#6b442a]', 'bg-[#0d6efd]'];
@@ -3922,7 +3922,7 @@
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function toggleFabMenu() {
         const fabContainer = document.getElementById('fab-container');
         const helpText = document.getElementById('fab-help-text');
@@ -3935,7 +3935,7 @@
         }
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadBanners() {
         db.ref("banners").on("value", (snapshot) => {
             const bannerContainer = document.getElementById('banner-container');
@@ -3967,7 +3967,7 @@
     }
 
     let sliderInterval;
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function startSlider() {
         clearInterval(sliderInterval);
         let idx = 0;
@@ -3991,7 +3991,7 @@
     let currentDepositAmount = 0;
     let currentPaymentMethod = '';
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function goToMethodStep() {
         const inputVal = parseInt(document.getElementById('new-amount-input').value);
         if (!inputVal || inputVal < 10) {
@@ -4002,7 +4002,7 @@
         document.getElementById('am-step-2').classList.remove('hidden');
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function backToAmountStep() {
         if (isDirectBuy) {
             document.getElementById('am-step-2').classList.add('hidden');
@@ -4015,7 +4015,7 @@
         }
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function goToPaymentPage(method, themeClass, customLogoUrl) {
         currentPaymentMethod = method;
         const resolvedLogo = safeMediaUrl(customLogoUrl || paymentLogos[method], '');
@@ -4050,13 +4050,13 @@
         document.getElementById('am-step-3').classList.remove('hidden');
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function backToMethodStep() {
         document.getElementById('am-step-3').classList.add('hidden');
         document.getElementById('am-step-2').classList.remove('hidden');
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function copyPayNumber() {
         const num = document.getElementById('pay-admin-number').innerText;
         if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -4072,7 +4072,7 @@
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function handleNewVerify() {
         const trxId = document.getElementById('pay-trx-input').value.trim();
         if (!trxId) {
@@ -4081,7 +4081,7 @@
         submitDeposit(trxId, currentDepositAmount);
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     async function submitDeposit(trxId, amount) {
         if (!currentUser) {
             return Swal.fire({
@@ -4142,7 +4142,7 @@ let currentServiceId = null;
     let activeProductsRef = null;
     let activeStockRef = null;
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function escapeHtml(str) {
         return String(str ?? "")
             .replace(/&/g, "&amp;")
@@ -4152,7 +4152,7 @@ let currentServiceId = null;
             .replace(/'/g, "&#039;");
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function parseDateMs(d) {
         if (!d) return 0;
         if (typeof d === "number") return d;
@@ -4161,14 +4161,14 @@ let currentServiceId = null;
         return isNaN(t) ? 0 : t;
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function formatDateVal(d) {
         const ms = parseDateMs(d);
         if (!ms) return "N/A";
         return new Date(ms).toLocaleString();
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function slugifyId(text, prefix = 'item') {
         const slug = String(text || '')
             .toLowerCase()
@@ -4177,12 +4177,12 @@ let currentServiceId = null;
         return slug || (prefix + '_' + Date.now());
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function showLoading() { document.getElementById('loading-spinner').style.display = 'flex'; }
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function hideLoading() { document.getElementById('loading-spinner').style.display = 'none'; }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function openEditModal(title, bodyHtml, onSave) {
         document.getElementById('edit-modal-title').innerText = title;
         document.getElementById('edit-modal-body').innerHTML = bodyHtml;
@@ -4193,14 +4193,14 @@ let currentServiceId = null;
         saveBtn.onclick = onSave;
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function closeEditModal() {
         const modal = document.getElementById('edit-modal-backdrop');
         modal.classList.add('hidden');
         modal.classList.remove('flex');
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function toggleSidebar() {
         const sidebar = document.getElementById('sidebar');
         const backdrop = document.getElementById('sidebar-backdrop');
@@ -4208,14 +4208,14 @@ let currentServiceId = null;
         backdrop.classList.toggle('hidden');
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
-    const DEFAULT_SEED_DATA = {"settings": {"general": {"siteName": "Pixel Topup", "notice": "স্বাগতম Pixel Topup-এ", "autoPayEnabled": false, "playerNameCheckApiUrl": "https://tyno-ffinfo.tzsm.workers.dev/name?uid={uid}", "logoUrl": "https://host.tscv.workers.dev/img/03506b2a447b460d", "promoImageUrl": "", "promoImageLink": "", "walletLogoUrl": "https://host.tscv.workers.dev/img/5ae86a6923a84f3f", "autoPayLogoUrl": "https://host.tscv.workers.dev/img/ee9737f984c641b1", "faviconUrl": "https://host.tscv.workers.dev/img/03506b2a447b460d", "footerThumbnailUrl": "https://host.tscv.workers.dev/img/4daab908e40648aa", "homeNoticeImageUrl": "https://host.tscv.workers.dev/img/9d1d911cea6547ff", "bannerUrls": ["https://host.tscv.workers.dev/img/e229f70e005d447d", "https://host.tscv.workers.dev/img/fff831fd629940dc"], "headerLogoUrl": "https://host.tscv.workers.dev/img/03506b2a447b460d", "aboutLogoUrl": "https://host.tscv.workers.dev/img/03506b2a447b460d", "bKashLogoUrl": "https://images.seeklogo.com/logo-png/27/1/bkash-logo-png_seeklogo-273684.png", "NagadLogoUrl": "https://images.seeklogo.com/logo-png/35/1/nagad-logo-png_seeklogo-356936.png", "RocketLogoUrl": "https://images.seeklogo.com/logo-png/31/1/dutch-bangla-rocket-logo-png_seeklogo-317692.png", "autoPayImageUrl": "https://host.tscv.workers.dev/img/ee9737f984c641b1", "whatsapp": "8801700000000", "telegram": "https://t.me/PixelTopup", "facebook": "https://facebook.com", "youtube": "https://youtube.com", "appLink": "#"}, "videos": {"howToAddMoney": "dQw4w9WgXcQ"}}, "admin": {"payment": {"number": "01700000000", "method": "bKash", "bKash": "01700000000", "bkash": "01700000000", "Nagad": "01700000000", "nagad": "01700000000", "Rocket": "01700000000", "rocket": "01700000000"}}, "categories": {"mobile": {"name": "Mobile Games & Offers", "slot": 1}}, "banners": {"banner_1": {"image": "https://host.tscv.workers.dev/img/e229f70e005d447d", "slot": 1}, "banner_2": {"image": "https://host.tscv.workers.dev/img/fff831fd629940dc", "slot": 2}}, "services": {"freefire": {"products": {"706": {"name": "25 Diamond", "price": 20, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "707": {"name": "50 Diamond", "price": 35, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "660": {"name": "115 Diamond", "price": 79, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "661": {"name": "240 Diamond", "price": 158, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "662": {"name": "355 Diamond", "price": 237, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "718": {"name": "480 Diamond", "price": 316, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "663": {"name": "610 Diamond", "price": 400, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "664": {"name": "850 Diamond", "price": 558, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "665": {"name": "1090 Diamond", "price": 716, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "666": {"name": "1240 Diamond", "price": 800, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "667": {"name": "1850 Diamond", "price": 1200, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "668": {"name": "2530 Diamond", "price": 1610, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "669": {"name": "3140 Diamond", "price": 2000, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "670": {"name": "5060 Diamond", "price": 3220, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "671": {"name": "10120 Diamond", "price": 6400, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "672": {"name": "Weekly", "price": 158, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "749": {"name": "Weekly Lite", "price": 40, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "673": {"name": "Monthly", "price": 780, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}}, "name": "Free Fire", "categoryId": "mobile", "type": "uid", "rules": "শুধুমাত্র Bangladesh সার্ভারে ID Code দিয়ে টপ আপ হবে।\nPlayer ID Code সঠিকভাবে দিন।\nঅর্ডার কমপ্লিট হওয়ার পর ডায়মন্ড না এলে support-এ যোগাযোগ করুন।", "image": "https://host.tscv.workers.dev/img/025f7f7611ff49e7", "icon": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "unipin-voucher": {"products": {"57": {"name": "25 Daimon pin", "price": 22, "stockCount": 4, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "16": {"name": "50 Diamond Pin", "price": 37, "stockCount": 23, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "17": {"name": "115 Diamond Pin", "price": 78, "stockCount": 30, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "18": {"name": "240 Diamond Pin", "price": 158, "stockCount": 22, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "19": {"name": "610 Diamond Pin", "price": 400, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "20": {"name": "1240 Diamond Pin", "price": 800, "stockCount": 2, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "21": {"name": "2530 Diamond Pin", "price": 1590, "stockCount": 3, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "22": {"name": "Weekly Pin", "price": 158, "stockCount": 20, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "23": {"name": "Monthly Pin", "price": 780, "stockCount": 6, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}}, "name": "UNIPIN VOUCHER BD", "categoryId": "mobile", "type": "code", "rules": "কিভাবে ইউনিপিন ভাউচার দিয়ে টপআপ করবেন ??\n\n\n⦿ প্রথমে কত ডায়মন্ড নিতে চান সে অনুযায়ী Unipin Voucher পিন সিলেক্ট করুন ।\n\n⦿ পিন পাওয়ার পর shop.garena.my ওয়েবসাইটে যান ।\n\n⦿ FF অপশনে গিয়ে আপনার Player ID দিয়ে লগিন করুন ।\n\n⦿ এরপর Proccess to Payment ক্লিক করে কত ডায়মন্ড টপআপ করতে চান সেটা সিলেক্ট করে পিন দিয়ে Purchase করে নিন ।\n\n \n\n\nHow to Topup with Unipin Voucher ??\n\n\n⦿ First select the Unipin Voucher Pin according to how many diamonds you want to buy.\n\n⦿ Go to shop.garena.my website after receiving PIN.\n\n⦿ Go to FF option and login with your Player ID.\n\n⦿ Then click Process to Payment, select how many diamonds you want to top up and purchase with PIN.", "image": "https://host.tscv.workers.dev/img/1f84f36601c94303", "icon": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "weekly-monthly": {"products": {"629": {"name": "Weekly", "price": 158, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "630": {"name": "2X Weekly", "price": 316, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "631": {"name": "3X Weekly", "price": 474, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "632": {"name": "5X Weekly", "price": 790, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "634": {"name": "Monthly", "price": 780, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "635": {"name": "2X Monthly", "price": 1580, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "768": {"name": "5X Monthly", "price": 3900, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "769": {"name": "10X Monthly", "price": 7800, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "638": {"name": "1Weekly + 1Monthly", "price": 940, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "639": {"name": "4Weekly + 1Monthly", "price": 1410, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}}, "name": "WEEKLY MONTHLY OFFER", "categoryId": "mobile", "type": "uid", "rules": "⦿ শুধুমাত্র Bangladesh সার্ভারে ID Code দিয়ে টপ আপ হবে।\n\n \n\n⦿ Player ID ভুল দিয়ে Diamond না পেলে Pixel Topup কর্তৃপক্ষ দায়ী নয় ।\n\n \n\n⦿ Order কমপ্লিট হওয়ার পরেও আইডিতে ডাইমন্ড না গেলে চেক করার জন্য ID Pass দিতে হবে।\n\n \n\n⦿ অর্ডার Cancel হলে কি কারণে তা Cancel হয়েছে তা অর্ডার হিস্টোরিতে দেওয়া থাকে অনুগ্রহ পুর্বক দেখে পুনরায় সঠিক তথ্য দিয়ে অর্ডার করবেন।", "image": "https://host.tscv.workers.dev/img/2f8a5b55978741ea", "icon": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "weekly-lite": {"products": {"744": {"name": "1x Weekly Lite", "price": 40, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/aba6c2ec7dff4ff7"}, "745": {"name": "2x Weekly Lite", "price": 80, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/aba6c2ec7dff4ff7"}, "746": {"name": "3x Weekly Lite", "price": 120, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/aba6c2ec7dff4ff7"}, "747": {"name": "5x Weekly Lite", "price": 200, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/aba6c2ec7dff4ff7"}, "748": {"name": "10x Weekly Lite", "price": 400, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/aba6c2ec7dff4ff7"}}, "name": "WEEKLY LITE BD", "categoryId": "mobile", "type": "uid", "rules": "⦿ শুধুমাত্র Bangladesh সার্ভারে ID Code দিয়ে টপ আপ হবে।\n\n \n\n⦿ Player ID Code ভুল দিয়ে Diamond না পেলে Pixel Topup কর্তৃপক্ষ দায়ী নয়।\n\n \n\n⦿ Order কমপ্লিট হওয়ার পরেও আইডিতে ডাইমন্ড না গেলে চেক করার জন্য আইডি পাসওয়ার্ড দিতে হবে ।\n\n \n\n⦿ অর্ডার Cancel হলে কি কারণে তা Cancel হয়েছে তা অর্ডার হিস্টোরিতে দেওয়া থাকে অনুগ্রহ পুর্বক দেখে পুনরায় সঠিক তথ্য দিয়ে অর্ডার করবেন।", "image": "https://host.tscv.workers.dev/img/aba6c2ec7dff4ff7", "icon": "https://host.tscv.workers.dev/img/aba6c2ec7dff4ff7"}, "level-up-pass": {"products": {"771": {"name": "6 level (120 Diamond)", "price": 40, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/4a5940cb702840cf"}, "772": {"name": "10 level (200 Diamond)", "price": 75, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/4a5940cb702840cf"}, "773": {"name": "15 level (200 Diamond)", "price": 75, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/4a5940cb702840cf"}, "774": {"name": "20 level (200 Diamond)", "price": 75, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/4a5940cb702840cf"}, "775": {"name": "25 level (200 Diamond)", "price": 75, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/4a5940cb702840cf"}, "776": {"name": "30 level (200 Diamond)", "price": 105, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/4a5940cb702840cf"}, "777": {"name": "Level Up Pass Full (1270 Diamond)", "price": 445, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/4a5940cb702840cf"}}, "name": "Level Up Pass", "categoryId": "mobile", "type": "uid", "rules": "null", "image": "https://host.tscv.workers.dev/img/4a5940cb702840cf", "icon": "https://host.tscv.workers.dev/img/4a5940cb702840cf"}, "freefire-like": {"products": {"826": {"name": "200 Likes ⇨ Instant Delivery", "price": 25, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "827": {"name": "400 Likes ⇨ 2 Days Package", "price": 50, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "828": {"name": "600 Likes ⇨ 3 Days Package", "price": 75, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "829": {"name": "1400 Likes ⇨ 7 Days Package", "price": 170, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "830": {"name": "3000 Likes ⇨ 15 Days Package", "price": 370, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "831": {"name": "6000 Likes ⇨ 1 Month Package", "price": 730, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "832": {"name": "12000 Likes ⇨ 2 Month Package", "price": 1450, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "833": {"name": "18000 Likes ⇨ 3 Month Package", "price": 2180, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "834": {"name": "36000 Likes ⇨ 6 Month Package", "price": 4400, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "835": {"name": "73000 Likes ⇨ 1 Year Package", "price": 8900, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}}, "name": "FF Like👍", "categoryId": "mobile", "type": "uid", "rules": "📢 অর্ডার করার আগে ভালোভাবে পড়ে নিন!\n\n \n\n✅ এক আইডিতে প্রতিদিন একবার অর্ডার করতে পারবেন।\n\n \n\n❌ একই দিনে একই আইডিতে বারবার অর্ডার করলে টাকা ফেরত দেওয়া হবে না।\n\n \n\n━━━━━━━━━━━━━━━━━━━━\n\n \n\n👍 Likes", "image": "https://host.tscv.workers.dev/img/a8be29d5a2c64979", "icon": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "indonesia-topup": {"products": {"709": {"name": "50 Diamond", "price": 65, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/141a8737b5564319"}, "710": {"name": "70 Diamond", "price": 90, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/141a8737b5564319"}, "711": {"name": "140 Diamond", "price": 180, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/141a8737b5564319"}, "712": {"name": "355 Diamond", "price": 445, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/141a8737b5564319"}, "713": {"name": "720 Diamond", "price": 890, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/141a8737b5564319"}, "714": {"name": "Weekly", "price": 255, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/141a8737b5564319"}, "715": {"name": "Monthly", "price": 800, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/141a8737b5564319"}, "717": {"name": "Bp Card", "price": 410, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/141a8737b5564319"}}, "name": "INDONESIA TOPUP", "categoryId": "mobile", "type": "uid", "rules": "⦿ শুধুমাত্র Indonesia সার্ভারে ID Code দিয়ে টপ আপ হবে।\n\n \n\n⦿ Player ID Code ভুল দিয়ে Diamond না পেলে Pixel Topup কর্তৃপক্ষ দায়ী নয়।\n\n \n\n⦿ Order কমপ্লিট হওয়ার পরেও আইডিতে ডাইমন্ড না গেলে চেক করার জন্য আইডি পাসওয়ার্ড দিতে হবে ।\n\n \n\n⦿ অর্ডার Cancel হলে কি কারণে তা Cancel হয়েছে তা অর্ডার হিস্টোরিতে দেওয়া থাকে অনুগ্রহ পুর্বক দেখে পুনরায় সঠিক তথ্য দিয়ে অর্ডার করবেন।", "image": "https://host.tscv.workers.dev/img/141a8737b5564319", "icon": "https://host.tscv.workers.dev/img/141a8737b5564319"}, "premium-user": {"products": {"819": {"name": "115 Diamond", "price": 77, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4"}, "820": {"name": "240 Diamond", "price": 155, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4"}, "821": {"name": "610 Diamond", "price": 390, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4"}, "822": {"name": "1240 Diamond", "price": 785, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4"}, "823": {"name": "2530 Diamond", "price": 1580, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4"}, "824": {"name": "Weekly", "price": 156, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4"}, "825": {"name": "Monthly", "price": 770, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4"}}, "name": "Premium User", "categoryId": "mobile", "type": "uid", "rules": "যেসব গ্রাহক Pixel Topup থেকে মোট 20,000 টাকা বা তার বেশি মূল্যের পণ্য ক্রয় করেছেন, তারা Premium Users অফারটি পাওয়ার যোগ্য হবেন। নির্ধারিত পরিমাণ টাকার টপ-আপ সম্পন্ন হলে, আপনি পরবর্তী টপ-আপে ডিসকাউন্ট উপভোগ করতে পারবেন।\n\n \n\n\n✨ অফারের বিস্তারিত:\n\n\n \n\n✔ শুধুমাত্র বিশ্বস্ত গ্রাহকদের জন্য প্রিমিয়াম পুরস্কার\n\n \n\n✔ আমাদের থেকে মোট ৳20,000+ টাকার কেনাকাটা থাকতে হবে\n\n \n\n✔ পরবর্তী টপ-আপে ডিসকাউন্ট প্রযোজ্য হবে\n\n \n\n✔ একজন গ্রাহক ২৪ ঘন্টার মধ্যে যেকোনো সর্বোচ্চ ২টি প্যাকেজ অর্ডার করতে পারবেন", "image": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4", "icon": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4"}}, "assets": {"site_logo": {"name": "site_logo", "url": "https://host.tscv.workers.dev/img/11a5c0c5f4904db7", "provider": "host.tscv.workers.dev"}, "wallet_logo": {"name": "wallet_logo", "url": "https://host.tscv.workers.dev/img/5ae86a6923a84f3f", "provider": "host.tscv.workers.dev"}, "autopay_logo": {"name": "autopay_logo", "url": "https://host.tscv.workers.dev/img/ee9737f984c641b1", "provider": "host.tscv.workers.dev"}, "favicon": {"name": "favicon", "url": "https://host.tscv.workers.dev/img/03506b2a447b460d", "provider": "host.tscv.workers.dev"}, "icon_192": {"name": "icon_192", "url": "https://host.tscv.workers.dev/img/dae8b13d3e464f64", "provider": "host.tscv.workers.dev"}, "icon_512": {"name": "icon_512", "url": "https://host.tscv.workers.dev/img/8612f0822cf54725", "provider": "host.tscv.workers.dev"}, "footer_thumbnail": {"name": "footer_thumbnail", "url": "https://host.tscv.workers.dev/img/4daab908e40648aa", "provider": "host.tscv.workers.dev"}, "home_notice": {"name": "home_notice", "url": "https://host.tscv.workers.dev/img/9d1d911cea6547ff", "provider": "host.tscv.workers.dev"}, "banner_1": {"name": "banner_1", "url": "https://host.tscv.workers.dev/img/e229f70e005d447d", "provider": "host.tscv.workers.dev"}, "banner_2": {"name": "banner_2", "url": "https://host.tscv.workers.dev/img/fff831fd629940dc", "provider": "host.tscv.workers.dev"}, "freefire_product": {"name": "freefire_product", "url": "https://host.tscv.workers.dev/img/025f7f7611ff49e7", "provider": "host.tscv.workers.dev"}, "unipin-voucher_product": {"name": "unipin-voucher_product", "url": "https://host.tscv.workers.dev/img/1f84f36601c94303", "provider": "host.tscv.workers.dev"}, "weekly-monthly_product": {"name": "weekly-monthly_product", "url": "https://host.tscv.workers.dev/img/2f8a5b55978741ea", "provider": "host.tscv.workers.dev"}, "weekly-lite_product": {"name": "weekly-lite_product", "url": "https://host.tscv.workers.dev/img/aba6c2ec7dff4ff7", "provider": "host.tscv.workers.dev"}, "level-up-pass_product": {"name": "level-up-pass_product", "url": "https://host.tscv.workers.dev/img/4a5940cb702840cf", "provider": "host.tscv.workers.dev"}, "freefire-like_product": {"name": "freefire-like_product", "url": "https://host.tscv.workers.dev/img/a8be29d5a2c64979", "provider": "host.tscv.workers.dev"}, "indonesia-topup_product": {"name": "indonesia-topup_product", "url": "https://host.tscv.workers.dev/img/141a8737b5564319", "provider": "host.tscv.workers.dev"}, "premium-user_product": {"name": "premium-user_product", "url": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4", "provider": "host.tscv.workers.dev"}, "pixel_topup_logo": {"name": "pixel_topup_logo", "url": "https://host.tscv.workers.dev/img/9bc4cd3f5a7c45cf", "provider": "host.tscv.workers.dev"}, "pixel_topup_logo_header": {"name": "pixel_topup_logo_header", "url": "https://host.tscv.workers.dev/img/03506b2a447b460d", "provider": "host.tscv.workers.dev"}, "bKashLogoUrl": {"name": "bKashLogoUrl", "url": "https://images.seeklogo.com/logo-png/27/1/bkash-logo-png_seeklogo-273684.png", "provider": "seeklogo.com"}, "NagadLogoUrl": {"name": "NagadLogoUrl", "url": "https://images.seeklogo.com/logo-png/35/1/nagad-logo-png_seeklogo-356936.png", "provider": "seeklogo.com"}, "RocketLogoUrl": {"name": "RocketLogoUrl", "url": "https://images.seeklogo.com/logo-png/31/1/dutch-bangla-rocket-logo-png_seeklogo-317692.png", "provider": "seeklogo.com"}, "autoPayImageUrl": {"name": "autoPayImageUrl", "url": "https://host.tscv.workers.dev/img/ee9737f984c641b1", "provider": "host.tscv.workers.dev"}}};
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
+    const DEFAULT_SEED_DATA = {"settings": {"general": {"siteName": "FSL Topup", "notice": "স্বাগতম FSL Topup-এ", "autoPayEnabled": false, "playerNameCheckApiUrl": "https://tyno-ffinfo.tzsm.workers.dev/name?uid={uid}", "logoUrl": "https://host.tscv.workers.dev/img/03506b2a447b460d", "promoImageUrl": "", "promoImageLink": "", "walletLogoUrl": "https://host.tscv.workers.dev/img/5ae86a6923a84f3f", "autoPayLogoUrl": "https://host.tscv.workers.dev/img/ee9737f984c641b1", "faviconUrl": "https://host.tscv.workers.dev/img/03506b2a447b460d", "footerThumbnailUrl": "https://host.tscv.workers.dev/img/4daab908e40648aa", "homeNoticeImageUrl": "https://host.tscv.workers.dev/img/9d1d911cea6547ff", "bannerUrls": ["https://host.tscv.workers.dev/img/e229f70e005d447d", "https://host.tscv.workers.dev/img/fff831fd629940dc"], "headerLogoUrl": "https://host.tscv.workers.dev/img/03506b2a447b460d", "aboutLogoUrl": "https://host.tscv.workers.dev/img/03506b2a447b460d", "bKashLogoUrl": "https://images.seeklogo.com/logo-png/27/1/bkash-logo-png_seeklogo-273684.png", "NagadLogoUrl": "https://images.seeklogo.com/logo-png/35/1/nagad-logo-png_seeklogo-356936.png", "RocketLogoUrl": "https://images.seeklogo.com/logo-png/31/1/dutch-bangla-rocket-logo-png_seeklogo-317692.png", "autoPayImageUrl": "https://host.tscv.workers.dev/img/ee9737f984c641b1", "whatsapp": "8801700000000", "telegram": "https://t.me/FSLTopup", "facebook": "https://facebook.com", "youtube": "https://youtube.com", "appLink": "#"}, "videos": {"howToAddMoney": "dQw4w9WgXcQ"}}, "admin": {"payment": {"number": "01700000000", "method": "bKash", "bKash": "01700000000", "bkash": "01700000000", "Nagad": "01700000000", "nagad": "01700000000", "Rocket": "01700000000", "rocket": "01700000000"}}, "categories": {"mobile": {"name": "Mobile Games & Offers", "slot": 1}}, "banners": {"banner_1": {"image": "https://host.tscv.workers.dev/img/e229f70e005d447d", "slot": 1}, "banner_2": {"image": "https://host.tscv.workers.dev/img/fff831fd629940dc", "slot": 2}}, "services": {"freefire": {"products": {"706": {"name": "25 Diamond", "price": 20, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "707": {"name": "50 Diamond", "price": 35, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "660": {"name": "115 Diamond", "price": 79, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "661": {"name": "240 Diamond", "price": 158, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "662": {"name": "355 Diamond", "price": 237, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "718": {"name": "480 Diamond", "price": 316, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "663": {"name": "610 Diamond", "price": 400, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "664": {"name": "850 Diamond", "price": 558, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "665": {"name": "1090 Diamond", "price": 716, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "666": {"name": "1240 Diamond", "price": 800, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "667": {"name": "1850 Diamond", "price": 1200, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "668": {"name": "2530 Diamond", "price": 1610, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "669": {"name": "3140 Diamond", "price": 2000, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "670": {"name": "5060 Diamond", "price": 3220, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "671": {"name": "10120 Diamond", "price": 6400, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "672": {"name": "Weekly", "price": 158, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "749": {"name": "Weekly Lite", "price": 40, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "673": {"name": "Monthly", "price": 780, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}}, "name": "Free Fire", "categoryId": "mobile", "type": "uid", "rules": "শুধুমাত্র Bangladesh সার্ভারে ID Code দিয়ে টপ আপ হবে।\nPlayer ID Code সঠিকভাবে দিন।\nঅর্ডার কমপ্লিট হওয়ার পর ডায়মন্ড না এলে support-এ যোগাযোগ করুন।", "image": "https://host.tscv.workers.dev/img/025f7f7611ff49e7", "icon": "https://host.tscv.workers.dev/img/025f7f7611ff49e7"}, "unipin-voucher": {"products": {"57": {"name": "25 Daimon pin", "price": 22, "stockCount": 4, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "16": {"name": "50 Diamond Pin", "price": 37, "stockCount": 23, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "17": {"name": "115 Diamond Pin", "price": 78, "stockCount": 30, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "18": {"name": "240 Diamond Pin", "price": 158, "stockCount": 22, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "19": {"name": "610 Diamond Pin", "price": 400, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "20": {"name": "1240 Diamond Pin", "price": 800, "stockCount": 2, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "21": {"name": "2530 Diamond Pin", "price": 1590, "stockCount": 3, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "22": {"name": "Weekly Pin", "price": 158, "stockCount": 20, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "23": {"name": "Monthly Pin", "price": 780, "stockCount": 6, "imageUrl": "https://host.tscv.workers.dev/img/1f84f36601c94303"}}, "name": "UNIPIN VOUCHER BD", "categoryId": "mobile", "type": "code", "rules": "কিভাবে ইউনিপিন ভাউচার দিয়ে টপআপ করবেন ??\n\n\n⦿ প্রথমে কত ডায়মন্ড নিতে চান সে অনুযায়ী Unipin Voucher পিন সিলেক্ট করুন ।\n\n⦿ পিন পাওয়ার পর shop.garena.my ওয়েবসাইটে যান ।\n\n⦿ FF অপশনে গিয়ে আপনার Player ID দিয়ে লগিন করুন ।\n\n⦿ এরপর Proccess to Payment ক্লিক করে কত ডায়মন্ড টপআপ করতে চান সেটা সিলেক্ট করে পিন দিয়ে Purchase করে নিন ।\n\n \n\n\nHow to Topup with Unipin Voucher ??\n\n\n⦿ First select the Unipin Voucher Pin according to how many diamonds you want to buy.\n\n⦿ Go to shop.garena.my website after receiving PIN.\n\n⦿ Go to FF option and login with your Player ID.\n\n⦿ Then click Process to Payment, select how many diamonds you want to top up and purchase with PIN.", "image": "https://host.tscv.workers.dev/img/1f84f36601c94303", "icon": "https://host.tscv.workers.dev/img/1f84f36601c94303"}, "weekly-monthly": {"products": {"629": {"name": "Weekly", "price": 158, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "630": {"name": "2X Weekly", "price": 316, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "631": {"name": "3X Weekly", "price": 474, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "632": {"name": "5X Weekly", "price": 790, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "634": {"name": "Monthly", "price": 780, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "635": {"name": "2X Monthly", "price": 1580, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "768": {"name": "5X Monthly", "price": 3900, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "769": {"name": "10X Monthly", "price": 7800, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "638": {"name": "1Weekly + 1Monthly", "price": 940, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "639": {"name": "4Weekly + 1Monthly", "price": 1410, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}}, "name": "WEEKLY MONTHLY OFFER", "categoryId": "mobile", "type": "uid", "rules": "⦿ শুধুমাত্র Bangladesh সার্ভারে ID Code দিয়ে টপ আপ হবে।\n\n \n\n⦿ Player ID ভুল দিয়ে Diamond না পেলে FSL Topup কর্তৃপক্ষ দায়ী নয় ।\n\n \n\n⦿ Order কমপ্লিট হওয়ার পরেও আইডিতে ডাইমন্ড না গেলে চেক করার জন্য ID Pass দিতে হবে।\n\n \n\n⦿ অর্ডার Cancel হলে কি কারণে তা Cancel হয়েছে তা অর্ডার হিস্টোরিতে দেওয়া থাকে অনুগ্রহ পুর্বক দেখে পুনরায় সঠিক তথ্য দিয়ে অর্ডার করবেন।", "image": "https://host.tscv.workers.dev/img/2f8a5b55978741ea", "icon": "https://host.tscv.workers.dev/img/2f8a5b55978741ea"}, "weekly-lite": {"products": {"744": {"name": "1x Weekly Lite", "price": 40, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/aba6c2ec7dff4ff7"}, "745": {"name": "2x Weekly Lite", "price": 80, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/aba6c2ec7dff4ff7"}, "746": {"name": "3x Weekly Lite", "price": 120, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/aba6c2ec7dff4ff7"}, "747": {"name": "5x Weekly Lite", "price": 200, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/aba6c2ec7dff4ff7"}, "748": {"name": "10x Weekly Lite", "price": 400, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/aba6c2ec7dff4ff7"}}, "name": "WEEKLY LITE BD", "categoryId": "mobile", "type": "uid", "rules": "⦿ শুধুমাত্র Bangladesh সার্ভারে ID Code দিয়ে টপ আপ হবে।\n\n \n\n⦿ Player ID Code ভুল দিয়ে Diamond না পেলে FSL Topup কর্তৃপক্ষ দায়ী নয়।\n\n \n\n⦿ Order কমপ্লিট হওয়ার পরেও আইডিতে ডাইমন্ড না গেলে চেক করার জন্য আইডি পাসওয়ার্ড দিতে হবে ।\n\n \n\n⦿ অর্ডার Cancel হলে কি কারণে তা Cancel হয়েছে তা অর্ডার হিস্টোরিতে দেওয়া থাকে অনুগ্রহ পুর্বক দেখে পুনরায় সঠিক তথ্য দিয়ে অর্ডার করবেন।", "image": "https://host.tscv.workers.dev/img/aba6c2ec7dff4ff7", "icon": "https://host.tscv.workers.dev/img/aba6c2ec7dff4ff7"}, "level-up-pass": {"products": {"771": {"name": "6 level (120 Diamond)", "price": 40, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/4a5940cb702840cf"}, "772": {"name": "10 level (200 Diamond)", "price": 75, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/4a5940cb702840cf"}, "773": {"name": "15 level (200 Diamond)", "price": 75, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/4a5940cb702840cf"}, "774": {"name": "20 level (200 Diamond)", "price": 75, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/4a5940cb702840cf"}, "775": {"name": "25 level (200 Diamond)", "price": 75, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/4a5940cb702840cf"}, "776": {"name": "30 level (200 Diamond)", "price": 105, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/4a5940cb702840cf"}, "777": {"name": "Level Up Pass Full (1270 Diamond)", "price": 445, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/4a5940cb702840cf"}}, "name": "Level Up Pass", "categoryId": "mobile", "type": "uid", "rules": "null", "image": "https://host.tscv.workers.dev/img/4a5940cb702840cf", "icon": "https://host.tscv.workers.dev/img/4a5940cb702840cf"}, "freefire-like": {"products": {"826": {"name": "200 Likes ⇨ Instant Delivery", "price": 25, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "827": {"name": "400 Likes ⇨ 2 Days Package", "price": 50, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "828": {"name": "600 Likes ⇨ 3 Days Package", "price": 75, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "829": {"name": "1400 Likes ⇨ 7 Days Package", "price": 170, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "830": {"name": "3000 Likes ⇨ 15 Days Package", "price": 370, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "831": {"name": "6000 Likes ⇨ 1 Month Package", "price": 730, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "832": {"name": "12000 Likes ⇨ 2 Month Package", "price": 1450, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "833": {"name": "18000 Likes ⇨ 3 Month Package", "price": 2180, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "834": {"name": "36000 Likes ⇨ 6 Month Package", "price": 4400, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "835": {"name": "73000 Likes ⇨ 1 Year Package", "price": 8900, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}}, "name": "FF Like👍", "categoryId": "mobile", "type": "uid", "rules": "📢 অর্ডার করার আগে ভালোভাবে পড়ে নিন!\n\n \n\n✅ এক আইডিতে প্রতিদিন একবার অর্ডার করতে পারবেন।\n\n \n\n❌ একই দিনে একই আইডিতে বারবার অর্ডার করলে টাকা ফেরত দেওয়া হবে না।\n\n \n\n━━━━━━━━━━━━━━━━━━━━\n\n \n\n👍 Likes", "image": "https://host.tscv.workers.dev/img/a8be29d5a2c64979", "icon": "https://host.tscv.workers.dev/img/a8be29d5a2c64979"}, "indonesia-topup": {"products": {"709": {"name": "50 Diamond", "price": 65, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/141a8737b5564319"}, "710": {"name": "70 Diamond", "price": 90, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/141a8737b5564319"}, "711": {"name": "140 Diamond", "price": 180, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/141a8737b5564319"}, "712": {"name": "355 Diamond", "price": 445, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/141a8737b5564319"}, "713": {"name": "720 Diamond", "price": 890, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/141a8737b5564319"}, "714": {"name": "Weekly", "price": 255, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/141a8737b5564319"}, "715": {"name": "Monthly", "price": 800, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/141a8737b5564319"}, "717": {"name": "Bp Card", "price": 410, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/141a8737b5564319"}}, "name": "INDONESIA TOPUP", "categoryId": "mobile", "type": "uid", "rules": "⦿ শুধুমাত্র Indonesia সার্ভারে ID Code দিয়ে টপ আপ হবে।\n\n \n\n⦿ Player ID Code ভুল দিয়ে Diamond না পেলে FSL Topup কর্তৃপক্ষ দায়ী নয়।\n\n \n\n⦿ Order কমপ্লিট হওয়ার পরেও আইডিতে ডাইমন্ড না গেলে চেক করার জন্য আইডি পাসওয়ার্ড দিতে হবে ।\n\n \n\n⦿ অর্ডার Cancel হলে কি কারণে তা Cancel হয়েছে তা অর্ডার হিস্টোরিতে দেওয়া থাকে অনুগ্রহ পুর্বক দেখে পুনরায় সঠিক তথ্য দিয়ে অর্ডার করবেন।", "image": "https://host.tscv.workers.dev/img/141a8737b5564319", "icon": "https://host.tscv.workers.dev/img/141a8737b5564319"}, "premium-user": {"products": {"819": {"name": "115 Diamond", "price": 77, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4"}, "820": {"name": "240 Diamond", "price": 155, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4"}, "821": {"name": "610 Diamond", "price": 390, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4"}, "822": {"name": "1240 Diamond", "price": 785, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4"}, "823": {"name": "2530 Diamond", "price": 1580, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4"}, "824": {"name": "Weekly", "price": 156, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4"}, "825": {"name": "Monthly", "price": 770, "stockCount": 1, "imageUrl": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4"}}, "name": "Premium User", "categoryId": "mobile", "type": "uid", "rules": "যেসব গ্রাহক FSL Topup থেকে মোট 20,000 টাকা বা তার বেশি মূল্যের পণ্য ক্রয় করেছেন, তারা Premium Users অফারটি পাওয়ার যোগ্য হবেন। নির্ধারিত পরিমাণ টাকার টপ-আপ সম্পন্ন হলে, আপনি পরবর্তী টপ-আপে ডিসকাউন্ট উপভোগ করতে পারবেন।\n\n \n\n\n✨ অফারের বিস্তারিত:\n\n\n \n\n✔ শুধুমাত্র বিশ্বস্ত গ্রাহকদের জন্য প্রিমিয়াম পুরস্কার\n\n \n\n✔ আমাদের থেকে মোট ৳20,000+ টাকার কেনাকাটা থাকতে হবে\n\n \n\n✔ পরবর্তী টপ-আপে ডিসকাউন্ট প্রযোজ্য হবে\n\n \n\n✔ একজন গ্রাহক ২৪ ঘন্টার মধ্যে যেকোনো সর্বোচ্চ ২টি প্যাকেজ অর্ডার করতে পারবেন", "image": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4", "icon": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4"}}, "assets": {"site_logo": {"name": "site_logo", "url": "https://host.tscv.workers.dev/img/11a5c0c5f4904db7", "provider": "host.tscv.workers.dev"}, "wallet_logo": {"name": "wallet_logo", "url": "https://host.tscv.workers.dev/img/5ae86a6923a84f3f", "provider": "host.tscv.workers.dev"}, "autopay_logo": {"name": "autopay_logo", "url": "https://host.tscv.workers.dev/img/ee9737f984c641b1", "provider": "host.tscv.workers.dev"}, "favicon": {"name": "favicon", "url": "https://host.tscv.workers.dev/img/03506b2a447b460d", "provider": "host.tscv.workers.dev"}, "icon_192": {"name": "icon_192", "url": "https://host.tscv.workers.dev/img/dae8b13d3e464f64", "provider": "host.tscv.workers.dev"}, "icon_512": {"name": "icon_512", "url": "https://host.tscv.workers.dev/img/8612f0822cf54725", "provider": "host.tscv.workers.dev"}, "footer_thumbnail": {"name": "footer_thumbnail", "url": "https://host.tscv.workers.dev/img/4daab908e40648aa", "provider": "host.tscv.workers.dev"}, "home_notice": {"name": "home_notice", "url": "https://host.tscv.workers.dev/img/9d1d911cea6547ff", "provider": "host.tscv.workers.dev"}, "banner_1": {"name": "banner_1", "url": "https://host.tscv.workers.dev/img/e229f70e005d447d", "provider": "host.tscv.workers.dev"}, "banner_2": {"name": "banner_2", "url": "https://host.tscv.workers.dev/img/fff831fd629940dc", "provider": "host.tscv.workers.dev"}, "freefire_product": {"name": "freefire_product", "url": "https://host.tscv.workers.dev/img/025f7f7611ff49e7", "provider": "host.tscv.workers.dev"}, "unipin-voucher_product": {"name": "unipin-voucher_product", "url": "https://host.tscv.workers.dev/img/1f84f36601c94303", "provider": "host.tscv.workers.dev"}, "weekly-monthly_product": {"name": "weekly-monthly_product", "url": "https://host.tscv.workers.dev/img/2f8a5b55978741ea", "provider": "host.tscv.workers.dev"}, "weekly-lite_product": {"name": "weekly-lite_product", "url": "https://host.tscv.workers.dev/img/aba6c2ec7dff4ff7", "provider": "host.tscv.workers.dev"}, "level-up-pass_product": {"name": "level-up-pass_product", "url": "https://host.tscv.workers.dev/img/4a5940cb702840cf", "provider": "host.tscv.workers.dev"}, "freefire-like_product": {"name": "freefire-like_product", "url": "https://host.tscv.workers.dev/img/a8be29d5a2c64979", "provider": "host.tscv.workers.dev"}, "indonesia-topup_product": {"name": "indonesia-topup_product", "url": "https://host.tscv.workers.dev/img/141a8737b5564319", "provider": "host.tscv.workers.dev"}, "premium-user_product": {"name": "premium-user_product", "url": "https://host.tscv.workers.dev/img/1fb38e37e9d647b4", "provider": "host.tscv.workers.dev"}, "FSL_topup_logo": {"name": "FSL_topup_logo", "url": "https://host.tscv.workers.dev/img/9bc4cd3f5a7c45cf", "provider": "host.tscv.workers.dev"}, "FSL_topup_logo_header": {"name": "FSL_topup_logo_header", "url": "https://host.tscv.workers.dev/img/03506b2a447b460d", "provider": "host.tscv.workers.dev"}, "bKashLogoUrl": {"name": "bKashLogoUrl", "url": "https://images.seeklogo.com/logo-png/27/1/bkash-logo-png_seeklogo-273684.png", "provider": "seeklogo.com"}, "NagadLogoUrl": {"name": "NagadLogoUrl", "url": "https://images.seeklogo.com/logo-png/35/1/nagad-logo-png_seeklogo-356936.png", "provider": "seeklogo.com"}, "RocketLogoUrl": {"name": "RocketLogoUrl", "url": "https://images.seeklogo.com/logo-png/31/1/dutch-bangla-rocket-logo-png_seeklogo-317692.png", "provider": "seeklogo.com"}, "autoPayImageUrl": {"name": "autoPayImageUrl", "url": "https://host.tscv.workers.dev/img/ee9737f984c641b1", "provider": "host.tscv.workers.dev"}}};
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     async function importDefaultSeedData() {
         const confirmRes = await Swal.fire({
             title: 'Import Default Seed Data?',
-            text: 'This will import the default Pixel Topup games, packages, categories, banners, and settings into Firebase Realtime Database.',
+            text: 'This will import the default FSL Topup games, packages, categories, banners, and settings into Firebase Realtime Database.',
             icon: 'question',
             showCancelButton: true,
             confirmButtonColor: '#5215b5',
@@ -4230,14 +4230,14 @@ let currentServiceId = null;
             loadServices();
             loadDashboardData();
             loadAppContent();
-            Swal.fire('Imported!', 'Default Pixel Topup data has been imported into Realtime Database.', 'success');
+            Swal.fire('Imported!', 'Default FSL Topup data has been imported into Realtime Database.', 'success');
         } catch (err) {
             hideLoading();
             Swal.fire('Import Failed', err.message, 'error');
         }
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function enterAdminWorkspace() {
         window._stayInStorefront = false;
         const appContent = document.getElementById('app-content');
@@ -4251,7 +4251,7 @@ let currentServiceId = null;
         loadDashboardData();
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function exitAdminToStorefront() {
         window._stayInStorefront = true;
         const appContent = document.getElementById('app-content');
@@ -4262,7 +4262,7 @@ let currentServiceId = null;
     }
 
     
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     async function loginAdmin() {
         const email = document.getElementById('admin-email') ? document.getElementById('admin-email').value.trim() : '';
         const pass = document.getElementById('admin-password') ? document.getElementById('admin-password').value.trim() : '';
@@ -4295,7 +4295,7 @@ let currentServiceId = null;
         }
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function logoutAdmin() {
         window._stayInStorefront = false;
         const appContent = document.getElementById('app-content');
@@ -4305,7 +4305,7 @@ let currentServiceId = null;
         auth.signOut().then(() => showSec('home'));
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function switchView(viewId, param1 = null, param2 = null, param3 = null) {
         document.querySelectorAll('.view-section').forEach(el => el.classList.add('hidden'));
         document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));
@@ -4338,7 +4338,7 @@ let currentServiceId = null;
             banners: "Homepage Slider Banners"
         };
 
-        document.getElementById('page-title').innerText = titles[viewId] || "Pixel Admin";
+        document.getElementById('page-title').innerText = titles[viewId] || "FSL Admin";
         document.getElementById('page-desc').innerText = `Full Create, Edit & Delete access for ${titles[viewId] || viewId}`;
 
         if (viewId === 'dashboard') loadDashboardData();
@@ -4371,12 +4371,12 @@ let currentServiceId = null;
         if (viewId === 'banners') loadBannersAdmin();
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function backToProductsView() {
         switchView('products', currentServiceId, currentServiceName, currentServiceType);
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadDashboardData() {
         db.ref('users').on('value', snap => {
             const val = snap.val() || {};
@@ -4427,7 +4427,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function renderDashboardTables(recentOrds, recentDeps) {
         const ordTbody = document.getElementById('dash-recent-orders');
         ordTbody.innerHTML = '';
@@ -4445,7 +4445,7 @@ let currentServiceId = null;
                         <td class="py-2.5 font-bold text-[#5215b5]">৳${escapeHtml(o.price)}</td>
                         <td class="py-2.5">${badge}</td>
                         <td class="py-2.5 text-right">
-                            <button onclick="openEditOrderModal('${escapeHtml(o.id)}')" class="pixel-btn-edit"><i class="fas fa-pen"></i></button>
+                            <button onclick="openEditOrderModal('${escapeHtml(o.id)}')" class="FSL-btn-edit"><i class="fas fa-pen"></i></button>
                         </td>
                     </tr>`;
             });
@@ -4471,7 +4471,7 @@ let currentServiceId = null;
         }
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadSettings() {
         db.ref('settings/general').once('value').then(snap => {
             const d = snap.val() || {};
@@ -4515,7 +4515,7 @@ let currentServiceId = null;
     }
 
     
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     async function triggerLikeApiForOrder(order, orderRef) {
         if (!order || !order.playerId || order.playerId === 'N/A' || order.playerId === 'Voucher Request') {
             return null;
@@ -4543,7 +4543,7 @@ let currentServiceId = null;
         return summary;
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     async function testAdminLikeApi() {
         const apiUrl = document.getElementById('set-ff-like-api')?.value.trim() || '';
         if (!apiUrl) {
@@ -4555,11 +4555,11 @@ let currentServiceId = null;
                 <div class="space-y-3 text-left">
                     <div>
                         <label class="block text-xs font-bold text-slate-600 mb-1">Player UID</label>
-                        <input id="swal-test-uid" class="pixel-input font-mono" placeholder="e.g. 9811998438" value="9811998438">
+                        <input id="swal-test-uid" class="FSL-input font-mono" placeholder="e.g. 9811998438" value="9811998438">
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-slate-600 mb-1">Like Amount / Package</label>
-                        <input id="swal-test-like" class="pixel-input" placeholder="e.g. 200 Likes" value="200">
+                        <input id="swal-test-like" class="FSL-input" placeholder="e.g. 200 Likes" value="200">
                     </div>
                 </div>
             `,
@@ -4603,7 +4603,7 @@ let currentServiceId = null;
         }
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function saveSettings(type) {
         showLoading();
         const tasks = [];
@@ -4623,7 +4623,7 @@ let currentServiceId = null;
                 tasks.push(db.ref('admin/email').set(adminEmail));
             }
             if (logoUrl) {
-                tasks.push(db.ref('assets/pixel_topup_logo_header').update({ name: 'pixel_topup_logo_header', url: logoUrl }));
+                tasks.push(db.ref('assets/FSL_topup_logo_header').update({ name: 'FSL_topup_logo_header', url: logoUrl }));
             }
         } else if (type === 'social') {
             tasks.push(db.ref('settings/general').update({
@@ -4688,7 +4688,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadCategoriesAdmin() {
         db.ref('categories').on('value', snap => {
             const raw = snap.val() || {};
@@ -4701,7 +4701,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function renderCategoriesUI() {
         const list = document.getElementById('cat-list');
         const drop = document.getElementById('srv-category');
@@ -4717,8 +4717,8 @@ let currentServiceId = null;
                         <td><span class="font-bold text-slate-800">${escapeHtml(c.name)}</span></td>
                         <td><span class="text-xs font-semibold text-slate-500">${gameCount} Games</span></td>
                         <td class="text-center space-x-1.5">
-                            <button onclick="openEditCategoryModal('${escapeHtml(c.id)}')" class="pixel-btn-edit"><i class="fas fa-pen"></i> Edit</button>
-                            <button onclick="deleteDocItem('categories', '${escapeHtml(c.id)}')" class="pixel-btn-danger"><i class="fas fa-trash"></i></button>
+                            <button onclick="openEditCategoryModal('${escapeHtml(c.id)}')" class="FSL-btn-edit"><i class="fas fa-pen"></i> Edit</button>
+                            <button onclick="deleteDocItem('categories', '${escapeHtml(c.id)}')" class="FSL-btn-danger"><i class="fas fa-trash"></i></button>
                         </td>
                     </tr>`;
             }
@@ -4726,7 +4726,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function addCategory() {
         const name = document.getElementById('cat-name').value.trim();
         const slot = parseInt(document.getElementById('cat-slot').value || 1);
@@ -4744,18 +4744,18 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function openEditCategoryModal(catId) {
         const c = categoriesMap[catId];
         if (!c) return;
         openEditModal('Edit Category', `
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Category Name</label>
-                <input type="text" id="edit-cat-name" value="${escapeHtml(c.name)}" class="pixel-input">
+                <input type="text" id="edit-cat-name" value="${escapeHtml(c.name)}" class="FSL-input">
             </div>
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Sort Order Slot</label>
-                <input type="number" id="edit-cat-slot" value="${escapeHtml(c.slot)}" class="pixel-input">
+                <input type="number" id="edit-cat-slot" value="${escapeHtml(c.slot)}" class="FSL-input">
             </div>
         `, () => {
             const newName = document.getElementById('edit-cat-name').value.trim();
@@ -4774,7 +4774,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadServices() {
         db.ref('services').on('value', snap => {
             const raw = snap.val() || {};
@@ -4787,7 +4787,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function renderServicesUI() {
         const list = document.getElementById('srv-list');
         if (!list) return;
@@ -4808,22 +4808,22 @@ let currentServiceId = null;
                     <td><span class="text-xs font-semibold text-slate-600">${escapeHtml(catName)}</span></td>
                     <td><span class="px-2.5 py-1 bg-purple-50 text-[#5215b5] border border-purple-200 rounded-lg text-[11px] font-bold uppercase">${escapeHtml(s.type)}</span></td>
                     <td class="text-center space-x-1.5 whitespace-nowrap">
-                        <button onclick="openServicePackages('${escapeHtml(s.id)}')" class="pixel-btn py-1.5 px-3 text-xs"><i class="fas fa-box-open"></i> Packages</button>
-                        <button onclick="openEditServiceModal('${escapeHtml(s.id)}')" class="pixel-btn-edit"><i class="fas fa-pen"></i> Edit</button>
-                        <button onclick="deleteDocItem('services', '${escapeHtml(s.id)}')" class="pixel-btn-danger"><i class="fas fa-trash"></i></button>
+                        <button onclick="openServicePackages('${escapeHtml(s.id)}')" class="FSL-btn py-1.5 px-3 text-xs"><i class="fas fa-box-open"></i> Packages</button>
+                        <button onclick="openEditServiceModal('${escapeHtml(s.id)}')" class="FSL-btn-edit"><i class="fas fa-pen"></i> Edit</button>
+                        <button onclick="deleteDocItem('services', '${escapeHtml(s.id)}')" class="FSL-btn-danger"><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>`;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function openServicePackages(srvId) {
         const s = servicesMap[srvId];
         if (!s) return;
         switchView('products', s.id, s.name, s.type);
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function addService() {
         const name = document.getElementById('srv-name').value.trim();
         const image = document.getElementById('srv-image').value.trim();
@@ -4858,7 +4858,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function openEditServiceModal(srvId) {
         const s = servicesMap[srvId];
         if (!s) return;
@@ -4871,20 +4871,20 @@ let currentServiceId = null;
         openEditModal('Edit Service / Game', `
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Service / Game Name</label>
-                <input type="text" id="edit-srv-name" value="${escapeHtml(s.name)}" class="pixel-input">
+                <input type="text" id="edit-srv-name" value="${escapeHtml(s.name)}" class="FSL-input">
             </div>
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Image URL (Direct Link)</label>
-                <input type="url" id="edit-srv-image" value="${escapeHtml(s.image || s.icon || '')}" class="pixel-input">
+                <input type="url" id="edit-srv-image" value="${escapeHtml(s.image || s.icon || '')}" class="FSL-input">
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
                     <label class="block text-xs font-bold text-slate-600 mb-1">Category</label>
-                    <select id="edit-srv-cat" class="pixel-input">${catOptions}</select>
+                    <select id="edit-srv-cat" class="FSL-input">${catOptions}</select>
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-600 mb-1">Delivery Type</label>
-                    <select id="edit-srv-type" class="pixel-input">
+                    <select id="edit-srv-type" class="FSL-input">
                         <option value="uid" ${s.type === 'uid' ? 'selected' : ''}>UID TopUp (Manual)</option>
                         <option value="code" ${s.type === 'code' ? 'selected' : ''}>Voucher Code (Auto)</option>
                         <option value="auto-topup" ${s.type === 'auto-topup' ? 'selected' : ''}>Auto TopUp (API)</option>
@@ -4893,11 +4893,11 @@ let currentServiceId = null;
             </div>
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Auto-Delivery / Like API URL (Optional)</label>
-                <input type="url" id="edit-srv-api" value="${escapeHtml(s.apiUrl || '')}" placeholder="https://api.demosite.top/api/ff-likes?api=KEY&uid={uid}&like={like}" class="pixel-input font-mono text-xs">
+                <input type="url" id="edit-srv-api" value="${escapeHtml(s.apiUrl || '')}" placeholder="https://api.demosite.top/api/ff-likes?api=KEY&uid={uid}&like={like}" class="FSL-input font-mono text-xs">
             </div>
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Rules & Instructions</label>
-                <textarea id="edit-srv-rules" class="pixel-input h-28">${escapeHtml(s.rules || '')}</textarea>
+                <textarea id="edit-srv-rules" class="FSL-input h-28">${escapeHtml(s.rules || '')}</textarea>
             </div>
         `, () => {
             const imgVal = document.getElementById('edit-srv-image').value.trim();
@@ -4924,7 +4924,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadProducts() {
         if (!currentServiceId) return;
         if (activeProductsRef) {
@@ -4943,7 +4943,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function renderProductsUI() {
         const list = document.getElementById('prod-list');
         if (!list) return;
@@ -4956,7 +4956,7 @@ let currentServiceId = null;
         items.forEach(p => {
             let stockBtn = '';
             if (currentServiceType === 'code' || currentServiceType === 'auto-topup') {
-                stockBtn = `<button onclick="openProductStock('${escapeHtml(p.id)}')" class="pixel-btn-outline py-1.5 px-3 text-xs"><i class="fas fa-key text-[#5215b5]"></i> Stock (${p.stockCount || 0})</button>`;
+                stockBtn = `<button onclick="openProductStock('${escapeHtml(p.id)}')" class="FSL-btn-outline py-1.5 px-3 text-xs"><i class="fas fa-key text-[#5215b5]"></i> Stock (${p.stockCount || 0})</button>`;
             }
             const imgUrl = p.imageUrl || servicesMap[currentServiceId]?.image || '';
             const imgHtml = imgUrl
@@ -4970,21 +4970,21 @@ let currentServiceId = null;
                     <td>${(currentServiceType === 'code' || currentServiceType === 'auto-topup') ? `<span class="px-2.5 py-1 rounded-full text-xs font-bold ${(p.stockCount || 0) > 0 ? 'bg-emerald-50 text-emerald-600' : 'bg-red-50 text-red-600'}">${p.stockCount || 0} Codes</span>` : '<span class="text-xs text-slate-400">Direct UID</span>'}</td>
                     <td class="text-center space-x-1.5 whitespace-nowrap">
                         ${stockBtn}
-                        <button onclick="openEditProductModal('${escapeHtml(p.id)}')" class="pixel-btn-edit"><i class="fas fa-pen"></i> Edit</button>
-                        <button onclick="deleteProduct('${escapeHtml(p.id)}')" class="pixel-btn-danger"><i class="fas fa-trash"></i></button>
+                        <button onclick="openEditProductModal('${escapeHtml(p.id)}')" class="FSL-btn-edit"><i class="fas fa-pen"></i> Edit</button>
+                        <button onclick="deleteProduct('${escapeHtml(p.id)}')" class="FSL-btn-danger"><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>`;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function openProductStock(prodId) {
         const p = productsMap[prodId];
         if (!p) return;
         switchView('stock', p.id, p.name);
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function addProduct() {
         const name = document.getElementById('prod-name').value.trim();
         const price = parseInt(document.getElementById('prod-price').value);
@@ -5009,28 +5009,28 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function openEditProductModal(prodId) {
         const p = productsMap[prodId];
         if (!p) return;
         openEditModal('Edit Recharge Package', `
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Package Name</label>
-                <input type="text" id="edit-prod-name" value="${escapeHtml(p.name)}" class="pixel-input">
+                <input type="text" id="edit-prod-name" value="${escapeHtml(p.name)}" class="FSL-input">
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
                     <label class="block text-xs font-bold text-slate-600 mb-1">Price (৳)</label>
-                    <input type="number" id="edit-prod-price" value="${escapeHtml(p.price)}" class="pixel-input">
+                    <input type="number" id="edit-prod-price" value="${escapeHtml(p.price)}" class="FSL-input">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-600 mb-1">Stock Count</label>
-                    <input type="number" id="edit-prod-stock" value="${escapeHtml(p.stockCount ?? 1)}" class="pixel-input">
+                    <input type="number" id="edit-prod-stock" value="${escapeHtml(p.stockCount ?? 1)}" class="FSL-input">
                 </div>
             </div>
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Product Image URL (Direct Link)</label>
-                <input type="url" id="edit-prod-image" value="${escapeHtml(p.imageUrl || servicesMap[currentServiceId]?.image || '')}" class="pixel-input">
+                <input type="url" id="edit-prod-image" value="${escapeHtml(p.imageUrl || servicesMap[currentServiceId]?.image || '')}" class="FSL-input">
             </div>
         `, () => {
             const newName = document.getElementById('edit-prod-name').value.trim();
@@ -5056,7 +5056,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function deleteProduct(prodId) {
         Swal.fire({ title: 'Delete Package?', text: 'This package will be removed permanently.', icon: 'warning', showCancelButton: true, confirmButtonColor: '#dc2626' }).then(r => {
             if (!r.isConfirmed) return;
@@ -5064,7 +5064,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadStock() {
         if (!currentServiceId || !currentProductId) return;
         if (activeStockRef) {
@@ -5084,7 +5084,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function renderStockUI() {
         const list = document.getElementById('stock-list');
         if (!list) return;
@@ -5100,14 +5100,14 @@ let currentServiceId = null;
                     <td class="font-mono font-bold text-[#5215b5]">${escapeHtml(s.code)}</td>
                     <td class="text-slate-400 text-xs">${escapeHtml(formatDateVal(s.addedAt))}</td>
                     <td class="text-center space-x-1.5">
-                        <button onclick="openEditStockModal('${escapeHtml(s.id)}')" class="pixel-btn-edit"><i class="fas fa-pen"></i> Edit</button>
-                        <button onclick="deleteStock('${escapeHtml(s.id)}')" class="pixel-btn-danger"><i class="fas fa-trash"></i></button>
+                        <button onclick="openEditStockModal('${escapeHtml(s.id)}')" class="FSL-btn-edit"><i class="fas fa-pen"></i> Edit</button>
+                        <button onclick="deleteStock('${escapeHtml(s.id)}')" class="FSL-btn-danger"><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>`;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     async function addStock() {
         const lines = document.getElementById('stock-codes').value.split('\n').map(l => l.trim()).filter(l => l);
         if (lines.length === 0) return Swal.fire('Empty', 'Please enter at least one code', 'warning');
@@ -5133,14 +5133,14 @@ let currentServiceId = null;
         }
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function openEditStockModal(stkId) {
         const s = stockMap[stkId];
         if (!s) return;
         openEditModal('Edit Stock Code', `
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Voucher / Redeem Code</label>
-                <input type="text" id="edit-stk-code" value="${escapeHtml(s.code)}" class="pixel-input font-mono">
+                <input type="text" id="edit-stk-code" value="${escapeHtml(s.code)}" class="FSL-input font-mono">
             </div>
         `, () => {
             const newCode = document.getElementById('edit-stk-code').value.trim();
@@ -5153,7 +5153,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     async function deleteStock(stockId) {
         const prodRef = db.ref(`services/${currentServiceId}/products/${currentProductId}`);
         await prodRef.child('stock/' + stockId).remove();
@@ -5163,7 +5163,7 @@ let currentServiceId = null;
         await prodRef.update({ stockCount: availCount });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadOrders() {
         const filter = document.getElementById('order-filter')?.value || 'all';
         db.ref('orders').on('value', snap => {
@@ -5182,7 +5182,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function renderOrdersTable() {
         const list = document.getElementById('order-list');
         if (!list) return;
@@ -5234,14 +5234,14 @@ let currentServiceId = null;
                         </select>
                     </td>
                     <td class="text-center space-x-1.5 whitespace-nowrap">
-                        <button onclick="openEditOrderModal('${escapeHtml(d.id)}')" class="pixel-btn-edit"><i class="fas fa-pen"></i> Edit</button>
-                        <button onclick="deleteDocItem('orders', '${escapeHtml(d.id)}')" class="pixel-btn-danger"><i class="fas fa-trash"></i></button>
+                        <button onclick="openEditOrderModal('${escapeHtml(d.id)}')" class="FSL-btn-edit"><i class="fas fa-pen"></i> Edit</button>
+                        <button onclick="deleteDocItem('orders', '${escapeHtml(d.id)}')" class="FSL-btn-danger"><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>`;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     async function updateOrderStatus(id, status) {
         const allowed = new Set(['pending', 'processing', 'success', 'cancel']);
         if (!allowed.has(status)) return Swal.fire('Invalid status', 'Choose a valid order status.', 'error');
@@ -5307,7 +5307,7 @@ let currentServiceId = null;
         }
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function openEditOrderModal(ordId) {
         const o = ordersMap[ordId];
         if (!o) return;
@@ -5315,30 +5315,30 @@ let currentServiceId = null;
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
                     <label class="block text-xs font-bold text-slate-600 mb-1">Game Name</label>
-                    <input type="text" id="edit-ord-game" value="${escapeHtml(o.gameName)}" class="pixel-input">
+                    <input type="text" id="edit-ord-game" value="${escapeHtml(o.gameName)}" class="FSL-input">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-600 mb-1">Package Name</label>
-                    <input type="text" id="edit-ord-pack" value="${escapeHtml(o.productName)}" class="pixel-input">
+                    <input type="text" id="edit-ord-pack" value="${escapeHtml(o.productName)}" class="FSL-input">
                 </div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
                     <label class="block text-xs font-bold text-slate-600 mb-1">Player ID / Target</label>
-                    <input type="text" id="edit-ord-player" value="${escapeHtml(o.playerId)}" class="pixel-input font-mono">
+                    <input type="text" id="edit-ord-player" value="${escapeHtml(o.playerId)}" class="FSL-input font-mono">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-600 mb-1">Price (৳)</label>
-                    <input type="number" id="edit-ord-price" value="${escapeHtml(o.price)}" class="pixel-input">
+                    <input type="number" id="edit-ord-price" value="${escapeHtml(o.price)}" class="FSL-input">
                 </div>
             </div>
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Voucher / Redeem Code (Optional - shown in user history)</label>
-                <input type="text" id="edit-ord-code" value="${escapeHtml(o.redeemCode || '')}" placeholder="Enter redeem code or delivery note" class="pixel-input font-mono">
+                <input type="text" id="edit-ord-code" value="${escapeHtml(o.redeemCode || '')}" placeholder="Enter redeem code or delivery note" class="FSL-input font-mono">
             </div>
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Order Status</label>
-                <select id="edit-ord-status" class="pixel-input">
+                <select id="edit-ord-status" class="FSL-input">
                     <option value="pending" ${o.status === 'pending' ? 'selected' : ''}>Pending</option>
                     <option value="processing" ${o.status === 'processing' ? 'selected' : ''}>Processing</option>
                     <option value="success" ${(o.status === 'success' || o.status === 'completed') ? 'selected' : ''}>Success / Completed</option>
@@ -5366,7 +5366,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadDeposits() {
         db.ref('deposits').on('value', snap => {
             const raw = snap.val() || {};
@@ -5379,7 +5379,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function renderDepositsTable() {
         const list = document.getElementById('deposit-list');
         if (!list) return;
@@ -5423,14 +5423,14 @@ let currentServiceId = null;
                     <td><span class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase border ${statusBadge}">${escapeHtml(d.status)}</span></td>
                     <td class="text-center space-x-1 whitespace-nowrap">
                         ${actionBtns}
-                        <button onclick="openEditDepositModal('${escapeHtml(d.id)}')" class="pixel-btn-edit"><i class="fas fa-pen"></i></button>
-                        <button onclick="deleteDocItem('deposits', '${escapeHtml(d.id)}')" class="pixel-btn-danger"><i class="fas fa-trash"></i></button>
+                        <button onclick="openEditDepositModal('${escapeHtml(d.id)}')" class="FSL-btn-edit"><i class="fas fa-pen"></i></button>
+                        <button onclick="deleteDocItem('deposits', '${escapeHtml(d.id)}')" class="FSL-btn-danger"><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>`;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function approveDepositById(depId) {
         const d = depositsMap[depId];
         if (!d) return;
@@ -5465,7 +5465,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function rejectDepositById(depId) {
         Swal.fire({ title: 'Reject Deposit?', icon: 'warning', showCancelButton: true, confirmButtonColor: '#dc2626' }).then(r => {
             if (!r.isConfirmed) return;
@@ -5473,33 +5473,33 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function openEditDepositModal(depId) {
         const d = depositsMap[depId];
         if (!d) return;
         openEditModal('Edit Deposit Request', `
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">User Email</label>
-                <input type="email" id="edit-dep-email" value="${escapeHtml(d.userEmail)}" class="pixel-input">
+                <input type="email" id="edit-dep-email" value="${escapeHtml(d.userEmail)}" class="FSL-input">
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
                     <label class="block text-xs font-bold text-slate-600 mb-1">Payment Method</label>
-                    <input type="text" id="edit-dep-method" value="${escapeHtml(d.method)}" class="pixel-input">
+                    <input type="text" id="edit-dep-method" value="${escapeHtml(d.method)}" class="FSL-input">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-600 mb-1">Amount (৳)</label>
-                    <input type="number" id="edit-dep-amount" value="${escapeHtml(d.amount)}" class="pixel-input">
+                    <input type="number" id="edit-dep-amount" value="${escapeHtml(d.amount)}" class="FSL-input">
                 </div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
                     <label class="block text-xs font-bold text-slate-600 mb-1">Transaction ID (TrxID)</label>
-                    <input type="text" id="edit-dep-trx" value="${escapeHtml(d.trxId)}" class="pixel-input font-mono">
+                    <input type="text" id="edit-dep-trx" value="${escapeHtml(d.trxId)}" class="FSL-input font-mono">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-600 mb-1">Status</label>
-                    <select id="edit-dep-status" class="pixel-input">
+                    <select id="edit-dep-status" class="FSL-input">
                         <option value="pending" ${d.status === 'pending' ? 'selected' : ''}>Pending</option>
                         <option value="approved" ${d.status === 'approved' ? 'selected' : ''}>Approved</option>
                         <option value="rejected" ${d.status === 'rejected' ? 'selected' : ''}>Rejected</option>
@@ -5523,7 +5523,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadUsers() {
         db.ref('users').on('value', snap => {
             const raw = snap.val() || {};
@@ -5536,7 +5536,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function searchUsers() {
         const term = (document.getElementById('user-search')?.value || '').toLowerCase();
         const filtered = Object.values(usersMap).filter(u =>
@@ -5547,7 +5547,7 @@ let currentServiceId = null;
         renderUsers(filtered);
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function renderUsers(users) {
         const list = document.getElementById('user-list');
         if (!list) return;
@@ -5572,37 +5572,37 @@ let currentServiceId = null;
                     </td>
                     <td><span class="px-3 py-1 rounded-full bg-purple-50 text-[#5215b5] font-extrabold text-sm">৳${escapeHtml(u.balance || 0)}</span></td>
                     <td class="text-center space-x-1.5 whitespace-nowrap">
-                        <button onclick="openEditUserModal('${escapeHtml(u.id)}')" class="pixel-btn-edit"><i class="fas fa-user-edit"></i> Edit User</button>
-                        <button onclick="deleteDocItem('users', '${escapeHtml(u.id)}')" class="pixel-btn-danger"><i class="fas fa-trash"></i></button>
+                        <button onclick="openEditUserModal('${escapeHtml(u.id)}')" class="FSL-btn-edit"><i class="fas fa-user-edit"></i> Edit User</button>
+                        <button onclick="deleteDocItem('users', '${escapeHtml(u.id)}')" class="FSL-btn-danger"><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>`;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function openAddUserModal() {
         openEditModal('Add New User Account', `
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Full Name</label>
-                <input type="text" id="new-usr-name" placeholder="Customer Name" class="pixel-input">
+                <input type="text" id="new-usr-name" placeholder="Customer Name" class="FSL-input">
             </div>
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Email Address</label>
-                <input type="email" id="new-usr-email" placeholder="user@example.com" class="pixel-input">
+                <input type="email" id="new-usr-email" placeholder="user@example.com" class="FSL-input">
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
                     <label class="block text-xs font-bold text-slate-600 mb-1">Phone Number</label>
-                    <input type="text" id="new-usr-phone" placeholder="017XXXXXXXX" class="pixel-input">
+                    <input type="text" id="new-usr-phone" placeholder="017XXXXXXXX" class="FSL-input">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-600 mb-1">Initial Wallet Balance (৳)</label>
-                    <input type="number" id="new-usr-bal" value="0" class="pixel-input">
+                    <input type="number" id="new-usr-bal" value="0" class="FSL-input">
                 </div>
             </div>
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Profile Image URL (Optional Link)</label>
-                <input type="url" id="new-usr-photo" placeholder="https://..." class="pixel-input">
+                <input type="url" id="new-usr-photo" placeholder="https://..." class="FSL-input">
             </div>
         `, () => {
             const name = document.getElementById('new-usr-name').value.trim();
@@ -5620,32 +5620,32 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function openEditUserModal(uid) {
         const u = usersMap[uid];
         if (!u) return;
         openEditModal('Edit User & Wallet Balance', `
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Full Name</label>
-                <input type="text" id="edit-usr-name" value="${escapeHtml(u.name || '')}" class="pixel-input">
+                <input type="text" id="edit-usr-name" value="${escapeHtml(u.name || '')}" class="FSL-input">
             </div>
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Email Address</label>
-                <input type="email" id="edit-usr-email" value="${escapeHtml(u.email || '')}" class="pixel-input">
+                <input type="email" id="edit-usr-email" value="${escapeHtml(u.email || '')}" class="FSL-input">
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
                     <label class="block text-xs font-bold text-slate-600 mb-1">Phone Number</label>
-                    <input type="text" id="edit-usr-phone" value="${escapeHtml(u.phone || '')}" class="pixel-input">
+                    <input type="text" id="edit-usr-phone" value="${escapeHtml(u.phone || '')}" class="FSL-input">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-600 mb-1">Wallet Balance (৳)</label>
-                    <input type="number" id="edit-usr-bal" value="${escapeHtml(u.balance || 0)}" class="pixel-input font-bold text-[#5215b5]">
+                    <input type="number" id="edit-usr-bal" value="${escapeHtml(u.balance || 0)}" class="FSL-input font-bold text-[#5215b5]">
                 </div>
             </div>
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Profile Image URL (Direct Link)</label>
-                <input type="url" id="edit-usr-photo" value="${escapeHtml(u.photoURL || '')}" placeholder="https://..." class="pixel-input">
+                <input type="url" id="edit-usr-photo" value="${escapeHtml(u.photoURL || '')}" placeholder="https://..." class="FSL-input">
             </div>
         `, () => {
             const updated = {
@@ -5667,7 +5667,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadUnpinCodes() {
         db.ref('unpin_codes').on('value', snap => {
             const raw = snap.val() || {};
@@ -5680,7 +5680,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function renderUnpinUI() {
         const list = document.getElementById('unpin-list');
         if (!list) return;
@@ -5691,14 +5691,14 @@ let currentServiceId = null;
                     <td class="font-mono font-bold text-[#5215b5] text-sm">${escapeHtml(c.code)}</td>
                     <td class="text-slate-400 text-xs">${escapeHtml(formatDateVal(c.addedAt))}</td>
                     <td class="text-center space-x-1.5">
-                        <button onclick="openEditUnpinModal('${escapeHtml(c.id)}')" class="pixel-btn-edit"><i class="fas fa-pen"></i> Edit</button>
-                        <button onclick="deleteDocItem('unpin_codes', '${escapeHtml(c.id)}')" class="pixel-btn-danger"><i class="fas fa-trash"></i></button>
+                        <button onclick="openEditUnpinModal('${escapeHtml(c.id)}')" class="FSL-btn-edit"><i class="fas fa-pen"></i> Edit</button>
+                        <button onclick="deleteDocItem('unpin_codes', '${escapeHtml(c.id)}')" class="FSL-btn-danger"><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>`;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function addUnpinCode() {
         const code = document.getElementById('unpin-code').value.trim();
         if (!code) return;
@@ -5709,14 +5709,14 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function openEditUnpinModal(id) {
         const item = unpinMap[id];
         if (!item) return;
         openEditModal('Edit Unpin Code', `
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Unpin Code</label>
-                <input type="text" id="edit-unpin-val" value="${escapeHtml(item.code)}" class="pixel-input font-mono">
+                <input type="text" id="edit-unpin-val" value="${escapeHtml(item.code)}" class="FSL-input font-mono">
             </div>
         `, () => {
             const code = document.getElementById('edit-unpin-val').value.trim();
@@ -5729,7 +5729,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadTutorialsAdmin() {
         db.ref('tutorials').on('value', snap => {
             const raw = snap.val() || {};
@@ -5741,7 +5741,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function renderTutorialsUI() {
         const list = document.getElementById('tut-list');
         if (!list) return;
@@ -5757,14 +5757,14 @@ let currentServiceId = null;
                     <td><span class="font-bold text-slate-800">${escapeHtml(t.title)}</span></td>
                     <td><a href="${escapeHtml(t.link)}" target="_blank" class="text-[#5215b5] text-xs font-bold hover:underline">Watch Video <i class="fas fa-external-link-alt ml-1"></i></a></td>
                     <td class="text-center space-x-1.5">
-                        <button onclick="openEditTutorialModal('${escapeHtml(t.id)}')" class="pixel-btn-edit"><i class="fas fa-pen"></i> Edit</button>
-                        <button onclick="deleteDocItem('tutorials', '${escapeHtml(t.id)}')" class="pixel-btn-danger"><i class="fas fa-trash"></i></button>
+                        <button onclick="openEditTutorialModal('${escapeHtml(t.id)}')" class="FSL-btn-edit"><i class="fas fa-pen"></i> Edit</button>
+                        <button onclick="deleteDocItem('tutorials', '${escapeHtml(t.id)}')" class="FSL-btn-danger"><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>`;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function addTutorial() {
         const title = document.getElementById('tut-title').value.trim();
         const link = document.getElementById('tut-link').value.trim();
@@ -5780,22 +5780,22 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function openEditTutorialModal(id) {
         const t = tutorialsMap[id];
         if (!t) return;
         openEditModal('Edit Video Tutorial', `
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Tutorial Title</label>
-                <input type="text" id="edit-tut-title" value="${escapeHtml(t.title)}" class="pixel-input">
+                <input type="text" id="edit-tut-title" value="${escapeHtml(t.title)}" class="FSL-input">
             </div>
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Video Link URL</label>
-                <input type="url" id="edit-tut-link" value="${escapeHtml(t.link)}" class="pixel-input">
+                <input type="url" id="edit-tut-link" value="${escapeHtml(t.link)}" class="FSL-input">
             </div>
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Thumbnail Image URL (Direct Link)</label>
-                <input type="url" id="edit-tut-thumb" value="${escapeHtml(t.thumbnail)}" class="pixel-input">
+                <input type="url" id="edit-tut-thumb" value="${escapeHtml(t.thumbnail)}" class="FSL-input">
             </div>
         `, () => {
             const updated = {
@@ -5812,7 +5812,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function syncBannerUrlsArray() {
         const urls = Object.values(bannersMap)
             .filter(b => b && b.image)
@@ -5821,7 +5821,7 @@ let currentServiceId = null;
         db.ref('settings/general/bannerUrls').set(urls);
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function loadBannersAdmin() {
         db.ref('banners').on('value', snap => {
             const raw = snap.val() || {};
@@ -5834,7 +5834,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function renderBannersUI() {
         const list = document.getElementById('ban-list');
         if (!list) return;
@@ -5845,14 +5845,14 @@ let currentServiceId = null;
                     <td class="text-center"><img src="${escapeHtml(b.image)}" class="h-14 w-32 object-cover rounded-xl border border-slate-200 mx-auto shadow-sm"></td>
                     <td class="text-xs text-slate-500 break-all font-mono">${escapeHtml(b.image)}</td>
                     <td class="text-center space-x-1.5">
-                        <button onclick="openEditBannerModal('${escapeHtml(b.id)}')" class="pixel-btn-edit"><i class="fas fa-pen"></i> Edit</button>
-                        <button onclick="deleteDocItem('banners', '${escapeHtml(b.id)}')" class="pixel-btn-danger"><i class="fas fa-trash"></i></button>
+                        <button onclick="openEditBannerModal('${escapeHtml(b.id)}')" class="FSL-btn-edit"><i class="fas fa-pen"></i> Edit</button>
+                        <button onclick="deleteDocItem('banners', '${escapeHtml(b.id)}')" class="FSL-btn-danger"><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>`;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function addBanner() {
         const image = document.getElementById('ban-img').value.trim();
         if (!image) return Swal.fire('Required', 'Please paste a Banner Image URL link', 'warning');
@@ -5865,18 +5865,18 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function openEditBannerModal(id) {
         const b = bannersMap[id];
         if (!b) return;
         openEditModal('Edit Slider Banner', `
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Banner Image URL (Direct Link)</label>
-                <input type="url" id="edit-ban-img" value="${escapeHtml(b.image)}" class="pixel-input">
+                <input type="url" id="edit-ban-img" value="${escapeHtml(b.image)}" class="FSL-input">
             </div>
             <div>
                 <label class="block text-xs font-bold text-slate-600 mb-1">Display Slot</label>
-                <input type="number" id="edit-ban-slot" value="${escapeHtml(b.slot || 1)}" class="pixel-input">
+                <input type="number" id="edit-ban-slot" value="${escapeHtml(b.slot || 1)}" class="FSL-input">
             </div>
         `, () => {
             const image = document.getElementById('edit-ban-img').value.trim();
@@ -5891,7 +5891,7 @@ let currentServiceId = null;
         });
     }
 
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
     function deleteDocItem(collection, id) {
         Swal.fire({
             title: 'Are you sure?',
@@ -5909,7 +5909,7 @@ let currentServiceId = null;
     }
 
     loadAppContent();
-    // DEVELOP BY https://t.me/Infinity_Codex
+    // DEVELOP BY https://t.me/TraderFaisalAhmed
 </script>
 </body>
-</html><!-- DEVELOP BY https://t.me/Infinity_Codex -->
+</html><!-- DEVELOP BY https://t.me/TraderFaisalAhmed -->
